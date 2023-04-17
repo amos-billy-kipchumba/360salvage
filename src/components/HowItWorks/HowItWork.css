@@ -1,0 +1,11 @@
+.HowItWorks > h2 {
+    color: rgb(99, 103, 102);
+    font-weight: 400;
+}
+
+.HowItWorksCard {
+    border: 1px solid rgb(217,55,49);
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 100px;
+}

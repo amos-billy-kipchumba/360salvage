@@ -1,0 +1,48 @@
+.HeaderMain {
+    background-color: rgb(255,255,255);
+    color: rgb(82, 91, 90);
+}
+
+.header_button {
+    background-color: lightseagreen;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    text-transform: inherit;
+}
+
+.header_button:hover {
+    color: lightseagreen;
+    background-color: white;
+    border: 1px solid lightseagreen;
+}
+
+.transMe {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__black {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+}
+
+.mimo {
+    color: rgb(166,197,117);
+}
+
+.pipa {
+    height: 60px;
+}
+
+
+.buttonHead {
+    background-color: rgb(42, 73, 76);
+    color: rgb(106, 185, 79);
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .pipa {
+        height: 50px;
+    }
+}

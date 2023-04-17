@@ -1,0 +1,16 @@
+.HeadTopper {
+    background-color: rgb(224, 224, 224);
+    color: rgb(85,94,91);
+}
+
+.HeadTopperChild {
+    border-right: 1px solid rgb(85,94,91);
+}
+
+.HeadTopperSpan {
+    color: rgb(187, 137, 140);
+}
+
+.Bottomer {
+    border-right: 1px solid white;
+}
