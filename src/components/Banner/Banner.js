@@ -33,12 +33,12 @@ function Banner() {
     <div className='container-slider' id="myList">
     {SlideData && SlideData.map((object, index)=>{
       return(
-        <div className={sliderIndex === index + 1 ? "slide active-anim h-full w-full" : "slide h-full w-full"} key={index}>
+        <section className={sliderIndex === index + 1 ? "slide active-anim h-full w-full" : "slide h-full w-full"} key={index} id='home'>
           <img src={object.Image} alt='' className='w-full h-screen object-cover' />
           <div className='w-full h-full absolute bg-gray-900/60 top-0 left-0'></div>
-          <div className='BannerOverlayContainer absolute bottom-[100px] left-[100px] text-white py-4 flex flex-col px-2'>
+          <div className='BannerOverlayContainer absolute bottom-[50px] p-[10px] left-[0px] md:bottom-[100px] md:left-[20px] xl:left-[100px] text-white py-4 flex flex-col px-2'>
               <h2>{object.h2}</h2>
-              <h3 className='pt-1 w-[400px] mt-6'>
+              <h3 className='pt-1 w-[98%] md:w-[400px] mt-6'>
                 {object.h4}
               </h3>
 
@@ -48,7 +48,7 @@ function Banner() {
                 <span>{object.tag}</span>
               </div>
           </div>
-      </div>
+      </section>
       )
     })}
 

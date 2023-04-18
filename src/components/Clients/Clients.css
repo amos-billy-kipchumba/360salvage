@@ -1,0 +1,80 @@
+.Besty::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: rgb(106,185,79);
+    transform: rotate(30deg);
+    left: -110%;
+    top: 90%;
+}
+
+.Besty:hover {
+    color: white;
+}
+
+.Besty:hover > h2 {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Besty:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+    cursor: pointer;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }50%{
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+.Besty1::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: rgb(27,72,77);
+    transform: rotate(30deg);
+    right: -120%;
+    top: 90%;
+}
+
+.Besty1:hover {
+    color: white;
+}
+
+.Besty1:hover > h2 {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Besty1:hover::before {
+    animation: bbb 0.7s 1;
+    top: -10%;
+    right: -10%;
+    cursor: pointer;
+}
+
+@keyframes bbb {
+    0%{
+        right: -110%;
+        top: 90%;
+    }50%{
+        right: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        right: -10%;
+    }
+}

@@ -4,11 +4,11 @@ import WeDoImg from '../Assets/about/DNR-_360_SALVAGE_BRAND_LOGO-04-removebg-pre
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
 function Footer() {
   return (
-    <div className='relative w-full min-h-[100vh] px-[100px] py-[50px] overflow-hidden'>
-      <img src={WeDoImg} className='w-full h-full translate-y-[200px] translate-x-[50px] grayscale' alt='' />
-      <div className='footer-container w-full h-full absolute top-0 left-0 flex flex-col py-[50px] px-[50px]'>
-        <div className='flex w-full px-[50px]'>
-          <div className='flex flex-col flex1 text-white'>
+    <div className='relative w-full min-h-[100vh] px-[0px] py-[0px] overflow-hidden mt-[100px] md:mt-[0]'>
+      <img src={WeDoImg} className='w-full h-full translate-y-[0px] translate-x-[200px] grayscale absolute z-0' alt='' />
+      <div className='footer-container w-full h-full relative top-0 left-0 flex flex-col py-[50px] px-[10px] md:px-[50px]'>
+        <div className='flex md:flex xl:flex-row flex-col-reverse w-full px-[10px] md:px-[50px]'>
+          <div className='flex flex-col md:flex1 text-white'>
             <h4>360 -Salvage Plc</h4>
 
             <p className='mt-[50px]'>We offer an easy way for car owners to get rid of 
@@ -18,8 +18,8 @@ function Footer() {
 
             <p className='mt-[50px] mb-[10px]'>© 360 -Salvage Plc 2023. All rights reserved</p>
           </div>
-          <div className='flex flex2 flex-col px-[50px]'>
-            <div className='flex justify-between text-white'>
+          <div className='flex w-full md:flex2 flex-col px-[5px] md:px-[50px] mt-4 xl:mt-0'>
+            <div className='flex flex-col md:flex md:flex-row justify-between text-white'>
               <div className='flex flex-col'>
                 <h3 className='text-green-400'>HOME</h3>
                 <p className='mt-[50px]'>About us</p>
@@ -36,7 +36,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className='flex w-full justify-between flex-col mt-4'>
+            <div className='md:flex w-full justify-between flex-col mt-4'>
               <input type='text' placeholder='Your name' className='w-[49%] outline-none p-2 border border-white bg-transparent' />
               <div className='w-[full] flex justify-between mt-2'>
                 <input type='email' placeholder='Your email' className='w-[49%] outline-none p-2 border border-white bg-transparent' />
@@ -48,7 +48,7 @@ function Footer() {
               <button className='ml-auto bg-white p-[10px] mb-[20px]'>SEND MESSAGE</button>
             </div>
           </div>
-          <div className='flex flex3 flex-col'>
+          <div className='flex md:flex3 flex-col'>
             <h3 className='text-green-400'>FOLLOW US</h3>
             <div className='flex text-white gap-[30px] mt-[50px]'>
               <span>
@@ -83,7 +83,7 @@ function Footer() {
 
         <hr />
 
-        <div className='flex text-white justify-around mt-[20px]'>
+        <div className='flex flex-wrap md:flex flex-row text-white justify-around mt-[20px]'>
           <p className=''>Site map</p>
           <p className=''>Use of cookies</p>
           <p className=''>Cookie Settings</p>

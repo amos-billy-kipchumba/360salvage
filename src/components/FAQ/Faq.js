@@ -3,10 +3,10 @@ import './Faq.css'
 import WeDoImg from '../Assets/about/DNR-_360_SALVAGE_BRAND_LOGO-04-removebg-preview.png'
 function Faq() {
   return (
-    <div className='min-h-[100vh] w-full flex flex-col'>
-        <h3 className='mt-[100px] ml-[100px] text-gray-700'>FREQUENTLY ASKED QUESTIONS[FAQs]</h3>
+    <div className='min-h-[100vh] w-full flex flex-col mb-[100px]'>
+        <h3 className='mt-[100px] ml-[20px] md:ml-[100px] text-gray-700'>FREQUENTLY ASKED QUESTIONS[FAQs]</h3>
 
-        <div className='w-[85%] mx-auto min-h-[50vh] grid sm:grid-cols-1 lg:grid-cols-3 gap-[5%] mt-[100px]'>
+        <div className='w-[85%] mx-auto min-h-[50vh] grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[5%] mt-[40px] md:mt-[100px]'>
             <div className='min-h-[50vh] flex-1 overflow-hidden relative p-[50px]'>
                 <img src={WeDoImg} className='w-full h-full translate-y-[200px] translate-x-[50px] grayscale' alt='' />
                 <div className='bg-white/90 w-full min-h-full absolute top-0 left-0 flex flex-col p-[50px]'>

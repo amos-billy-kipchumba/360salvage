@@ -12,7 +12,7 @@
 
 
 .magicBut {
-  position: sticky;
+  position: fixed;
   bottom: 200px;
   right: 0;
   background-color: rgb(216,56,48);
@@ -23,4 +23,12 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-left: auto;
+}
+
+.hide_banner {
+  display: none;
+}
+
+.show_banner {
+  display: flex;
 }
