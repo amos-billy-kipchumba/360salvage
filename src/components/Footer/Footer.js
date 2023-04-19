@@ -1,11 +1,13 @@
 
 import './Footer.css'
-import WeDoImg from '../Assets/about/DNR-_360_SALVAGE_BRAND_LOGO-04-removebg-preview.png'
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
+
+import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
 function Footer() {
   return (
     <div className='relative w-full min-h-[100vh] px-[0px] py-[0px] overflow-hidden mt-[100px] md:mt-[0]'>
-      <img src={WeDoImg} className='w-full h-full translate-y-[0px] translate-x-[200px] grayscale absolute z-0' alt='' />
+      <img src={Greener} alt='' className='Rodni absolute bottom-0 rotate-180 w-[70%] right-0 translate-y-[-90px]' />
+      <img src={Greener} alt='' className='Rodni absolute top-0 w-[70%] left-0' />
       <div className='footer-container w-full h-full relative top-0 left-0 flex flex-col py-[50px] px-[10px] md:px-[50px]'>
         <div className='flex md:flex xl:flex-row flex-col-reverse w-full px-[10px] md:px-[50px]'>
           <div className='flex flex-col md:flex1 text-white'>

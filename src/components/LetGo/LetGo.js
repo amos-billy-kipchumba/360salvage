@@ -1,7 +1,8 @@
 import React from 'react'
 import './LetGo.css'
 import AboutImg from '../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car.png'
-import WeDoImg from '../Assets/about/DNR-_360_SALVAGE_BRAND_LOGO-04-removebg-preview.png'
+
+import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
 function LetGo() {
   return (
     <div className='w-full flex flex-col md:flex xl:flex-row min-h-[60vh]'>
@@ -9,8 +10,8 @@ function LetGo() {
             <img src={AboutImg} className='h-full object-cover' alt='' />
         </div>
         <div className='min-h-[50vh] flex-1 overflow-hidden relative'>
-            <img src={WeDoImg} className='w-full h-full translate-y-[250px] translate-x-[200px] grayscale' alt='' />
-            <div className='LetGo w-full min-h-full sticky md:absolute top-0 left-0 flex flex-col px-[10px] md:px-[100px]'>
+            <div className='LetGo w-full min-h-full relative top-0 left-0 flex flex-col px-[10px] md:px-[100px]'>
+                <img src={Greener} alt='' className='absolute bottom-0 rotate-180 w-[70%]' />
                 <h2 className='text-white font-bold text-5xl mt-[50px]'>Have you been thinking 
                 of letting go your 
                 old car?</h2>
