@@ -7,6 +7,11 @@
     flex-direction: column;
 }
 
+.WeDoOverlay > img {
+    z-index: -1;
+    mix-blend-mode: difference;
+}
+
 .WeDoOverlay > h2 {
     color: rgb(106, 185, 79);
     font-size: 25px;

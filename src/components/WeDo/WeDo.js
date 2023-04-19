@@ -1,12 +1,12 @@
 import React from 'react'
 import './WeDo.css'
-import WeDoImg from '../Assets/about/DNR-_360_SALVAGE_BRAND_LOGO-04-removebg-preview.png'
 import Green from "../Assets/logo/Icon_Green_Leaf-11-removebg-preview.png"
+import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
 function WeDo() {
   return (
     <section className='w-full min-h-[120vh] relative overflow-hidden' id='services'>
-        <img src={WeDoImg} className='absolute w-full h-full translate-y-[550px] translate-x-[350px] grayscale' alt='' />
         <div className='WeDoOverlay px-[10px] md:px-[30px] lg:px-[100px] relative md:absolute w-full min-h-[100vh] flex flex-col'>
+            <img src={Greener} alt='' className='absolute bottom-0 rotate-180 w-[70%]' />
             <h2 className='ml-8 md:ml-0'>WHAT WE DO</h2>
 
             <div className='mx-auto px-4 py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-[5%] mb-8 md:mb-0'>

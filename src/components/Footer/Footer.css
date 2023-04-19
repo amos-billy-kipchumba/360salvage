@@ -1,11 +1,11 @@
 
 .footer-container {
-    background-color: rgb(42,73,76, .9);
+    background-color: rgb(42,73,76, .8);
 }
 
 
-.bordBom {
-    
+.footer-container > img {
+    mix-blend-mode: hard-light;
 }
 
 .flex1 {

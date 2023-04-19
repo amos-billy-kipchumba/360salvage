@@ -5,7 +5,6 @@ import {useNavigate} from 'react-router-dom'
 import Pipa from '../Assets/logo/DNR-360_SALVAGE_LOGO-05-removebg-preview.png'
 import HeadTopper from './HeadTopper'
 import HeadBottomer from './HeadBottomer'
-import { HashLink as Link } from 'react-router-hash-link'
 function Header() {
     const [nav, setNav] = useState(false);
 
@@ -52,9 +51,15 @@ function Header() {
             </div>
 
             <ul className='hidden list-none h-full md:flex close-li align-middle justify-center font-medium text-xs'>
-                <Link className='md:mr-[30px] mt-auto mb-auto' to='#home' smooth>HOME</Link>
-                <Link className='md:mr-[30px] mt-auto mb-auto' to='#about' smooth>ABOUT</Link>
-                <Link className='md:mr-[30px] mt-auto mb-auto' to='#services' smooth>SERVICES</Link>
+                <li className='md:mr-[30px] mt-auto mb-auto' onClick={()=>{
+                    Navigate('/');
+                }}>HOME</li>
+                <li className='md:mr-[30px] mt-auto mb-auto' onClick={()=>{
+                    Navigate('/about');
+                }}>ABOUT</li>
+                <li className='md:mr-[30px] mt-auto mb-auto' onClick={()=>{
+                    Navigate('/services');
+                }}>SERVICES</li>
                 <li className='md:mr-[30px] mt-auto mb-auto' onClick={()=>{
                     Navigate('/animation');
                 }}>360 AUTO SHOP*</li>
@@ -75,17 +80,23 @@ function Header() {
             <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-green-500 px-4 py-7 flex flex-col transMe' : 'absolute left-[-100%] top-0 w-full bg-gray-900 px-4 py-7 flex flex-col transMe'}>
                 <ul className='text-black flex flex-col'>
                     <h1><img src={Pipa} alt='icon' className='pipa' /></h1>
-                    <Link className='border-b text-white mt-4' to='#home' smooth>HOME</Link>
-                    <Link className='border-b text-white mt-4' to='#about' smooth>ABOUT</Link>
-                    <Link className='border-b text-white mt-4' to='#services' smooth>SERVICES</Link>
                     <li className='border-b text-white' onClick={()=>{
-                        Navigate('/animation');
-                    }}>360 AUTO SHOP*</li>
+                        Navigate('/');
+                    }}>HOME</li>
                     <li className='border-b text-white' onClick={()=>{
-                        Navigate('/clients');
-                    }}>SPEAK TO AN EXPERT</li>
+                        Navigate('/about');
+                    }}>ABOUT</li>
                     <li className='border-b text-white' onClick={()=>{
                         Navigate('/services');
+                    }}>SERVICES</li>
+                    <li className='border-b text-white' onClick={()=>{
+                        Navigate('/shop');
+                    }}>360 AUTO SHOP*</li>
+                    <li className='border-b text-white' onClick={()=>{
+                        Navigate('/contacts');
+                    }}>SPEAK TO AN EXPERT</li>
+                    <li className='border-b text-white' onClick={()=>{
+                        Navigate('/shop');
                     }}>SELL YOUR CAR</li>
 
                     <div className='flex justify-between my-6'>
