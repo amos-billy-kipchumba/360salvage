@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home'
 import About from './components/Pages/About/About';
 import Services from './components/Pages/Services/Services';
+import MainService from './components/Pages/MainService/MainService';
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -27,6 +28,12 @@ function App() {
             window.removeEventListener("scroll", updateScrollDirection);
         }
     },[scrollDirection]);
+
+    //Scroll to the top on load-
+      useEffect(()=>{
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    },[]);
+    //End of Scroll to the top on load
   return (
     <BrowserRouter>
       <div className="App overflow-hidden flex flex-col w-full">
@@ -37,6 +44,8 @@ function App() {
             <Route exact path="/about" element={ <About /> }>
             </Route>
             <Route exact path="/services" element={ <Services /> }>
+            </Route>
+            <Route exact path="/service" element={ <MainService /> }>
             </Route>
         </Routes>
         <Footer />
