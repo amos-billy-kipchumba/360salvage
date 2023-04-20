@@ -1,0 +1,28 @@
+.bordBot {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.bord {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.bodSpan {
+    border-bottom: 2px solid blue;
+    width: 80px;
+}
+
+.bodRight {
+    border-right: 1px solid lightgray;
+}
+
+.Ruga {
+    transition: all 1s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.gott {
+    display: flex;
+}

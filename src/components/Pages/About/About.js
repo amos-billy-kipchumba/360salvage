@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './About.css'
 import { CarRepair, ChargingStation, CheckOutlined, DisplaySettings, Insights, OilBarrel, SensorOccupied, Speaker } from '@mui/icons-material'
 import AboutImg2 from '../../Assets/Slides/The art of Salvage.png'
@@ -37,14 +37,20 @@ function About() {
 
 
   //end of sliding arrows
+
+    //Scroll to the top on load-
+    useEffect(()=>{
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    },[]);
+    //End of Scroll to the top on load
   return (
     <div className='AboutPum w-full flex flex-col'>
-        <div className='w-full h-[25vh] lg:h-[20vh] md:h-[30vh] pb-8 flex flex-col justify-end bg-gray-100'>
+        <div className='w-full h-[25vh] lg:h-[20vh] md:h-[30vh] xl:h-[40vh] pb-8 flex flex-col justify-end bg-gray-100'>
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>ABOUT US</h3>
 
                 <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>HOME /<span className='ml-1 text-blue-400'>ABOUT US</span>
+                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-blue-400'>ABOUT US</span>
                 </h5>
             </div>
         </div>
