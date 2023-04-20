@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './MainService.css'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, useNavigate } from 'react-router-dom'
 import { ArrowCircleRightOutlined, CheckOutlined, ArrowRight } from '@mui/icons-material';
 import FirstImg from '../../Assets/services/image_02.jpg'
 import SecondImg from "../../Assets/services/image_03.jpg"
@@ -12,6 +12,8 @@ function MainService() {
     const [showThree, setShowThree] = useState(false);
     
     const paramaName = searchParams.get('name');
+
+    const Navigate = useNavigate()
 
     //Scroll to the top on load-
     useEffect(()=>{
@@ -33,12 +35,24 @@ function MainService() {
         <div className='w-full flex flex-col-reverse xl:flex-row bg-white px-[10px] xl:px-[100px] xl:py-[50px] gap-[20px]'>
             <div className='flex flex-col w-[70%] xl:w-[25%]'>
                 <div className='w-full flex flex-col'>
-                    <div className='w-full p-4 bg-blue-600 text-white text-xs flex justify-between align-middle'><p className='my-auto'>ENGINE DIAGNOSTICS</p> <span className='text-white my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>LUBE, OIL AND FILTERS</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>BELTS AND HOSES</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>AIR CONDITIONING</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>BRAKE REPAIR</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>TIRE AND WHEEL SERVICES</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className='w-full p-4 bg-blue-600 text-white text-xs flex justify-between align-middle' nClick={()=>{
+                        Navigate(`/service?name=ENGINE DIAGNOSTICS`)
+                      }}><p className='my-auto'>ENGINE DIAGNOSTICS</p> <span className='text-white my-auto'><ArrowRight /></span></div>
+                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
+                        Navigate(`/service?name=LUBE, OIL AND FILTERS`)
+                      }}><p className='my-auto'>LUBE, OIL AND FILTERS</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
+                        Navigate(`/service?name=BELTS AND HOSES`)
+                      }}><p className='my-auto'>BELTS AND HOSES</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto' onClick={()=>{
+                        Navigate(`/service?name=AIR CONDITIONING`)
+                      }}>AIR CONDITIONING</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
+                        Navigate(`/service?name=BRAKE REPAIR`)
+                      }}><p className='my-auto'>BRAKE REPAIR</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
+                        Navigate(`/service?name=TIRE AND WHEEL SERVICES`)
+                      }}><p className='my-auto'>TIRE AND WHEEL SERVICES</p> <span className='my-auto'><ArrowRight /></span></div>
                 </div>
             </div>
 
