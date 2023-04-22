@@ -1,28 +1,29 @@
 
 import React, {useState, useEffect} from 'react'
 import './Banner.css'
+import Vid from '../Assets/banner/lots-of-car-tires-in-a-backyard-starting-a-small-b-2023-02-28-19-43-10-utc.mp4'
 import SlideData from './SliderData';
 function Banner() {
 
-  //Start of sliding arrows
+    //Start of sliding arrows
 
-  const [sliderIndex, setSliderIndex] = useState(1);
+    const [sliderIndex, setSliderIndex] = useState(1);
 
-   const moveDot = index => {
+    const moveDot = index => {
     setSliderIndex(index);
-   }
+    }
 
-   useEffect(()=>{
+    useEffect(()=>{
     setTimeout(()=> {
-      setSliderIndex(sliderIndex + 1)
-     }, 10000);
-     if(sliderIndex === 5) {
-      setSliderIndex(1)
-     }
-   },[sliderIndex])
+        setSliderIndex(sliderIndex + 1)
+        }, 10000);
+        if(sliderIndex === 5) {
+        setSliderIndex(1)
+        }
+    },[sliderIndex])
 
 
-   //end of sliding arrows
+    //end of sliding arrows
 
    //Scroll to the top on load
    useEffect(()=>{
@@ -31,36 +32,36 @@ function Banner() {
   //End of Scroll to the top on load
   return (
     <div className='container-slider' id="myList">
-    {SlideData && SlideData.map((object, index)=>{
-      return(
-        <section className={sliderIndex === index + 1 ? "slide active-anim h-full w-full" : "slide h-full w-full"} key={index} id='home'>
-          <img src={object.Image} alt='' className='w-full h-screen object-cover' />
-          <div className='w-full h-full absolute bg-gray-900/60 top-0 left-0'></div>
-          <div className='BannerOverlayContainer absolute bottom-[50px] p-[10px] left-[0px] md:bottom-[100px] md:left-[20px] xl:left-[100px] text-white py-4 flex flex-col px-2'>
-              <h2>{object.h2}</h2>
-              <h3 className='pt-1 w-[98%] md:w-[400px] mt-6'>
-                {object.h4}
-              </h3>
+      <video src={Vid} width='100%' height='100%' muted autoPlay='true' loop className='min-h-full min-w-full object-cover' />
+        {SlideData && SlideData.map((object, index)=>{
+          return(
+          <section className={sliderIndex === index + 1 ? "slide active-anim h-full w-full" : "slide h-full w-full"} key={index} id='home'>
+              <div className='w-full h-full absolute bg-gray-900/60 top-0 left-0'></div>
+              <div className='BannerOverlayContainer absolute bottom-[50px] p-[10px] left-[0px] md:bottom-[100px] md:left-[20px] xl:left-[100px] text-white py-4 flex flex-col px-2'>
+                  <h2>{object.h2}</h2>
+                  <h3 className='pt-1 w-[98%] md:w-[400px] mt-6'>
+                  {object.h4}
+                  </h3>
 
-              <div className='BannerOverlayContainerChild mt-10'>
-                <span></span>
+                  <div className='BannerOverlayContainerChild mt-10'>
+                  <span></span>
 
-                <span>{object.tag}</span>
+                  <span>{object.tag}</span>
+                  </div>
               </div>
-          </div>
-      </section>
-      )
-    })}
+          </section>
+          )
+      })}
 
-        <div className='dots'>
-        {Array.from({length: SlideData.length}).map((item, index) => (
-          <div 
-          className={sliderIndex === index + 1 ? "dot dot-outlined" : "dot"}
-          onClick={()=> {
-            moveDot(index + 1);
-          }} key={index}></div>
-        ))}
-        </div>
+      <div className='dots'>
+      {Array.from({length: SlideData.length}).map((item, index) => (
+        <div 
+        className={sliderIndex === index + 1 ? "dot dot-outlined" : "dot"}
+        onClick={()=> {
+          moveDot(index + 1);
+        }} key={index}></div>
+      ))}
+      </div>
     </div>
   )
 }

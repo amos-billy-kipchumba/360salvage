@@ -35,24 +35,18 @@ function MainService() {
         <div className='w-full flex flex-col-reverse xl:flex-row bg-white px-[10px] xl:px-[100px] xl:py-[50px] gap-[20px]'>
             <div className='flex flex-col w-[70%] xl:w-[25%]'>
                 <div className='w-full flex flex-col'>
-                    <div className='w-full p-4 bg-blue-600 text-white text-xs flex justify-between align-middle' nClick={()=>{
-                        Navigate(`/service?name=ENGINE DIAGNOSTICS`)
-                      }}><p className='my-auto'>ENGINE DIAGNOSTICS</p> <span className='text-white my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
-                        Navigate(`/service?name=LUBE, OIL AND FILTERS`)
-                      }}><p className='my-auto'>LUBE, OIL AND FILTERS</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
-                        Navigate(`/service?name=BELTS AND HOSES`)
-                      }}><p className='my-auto'>BELTS AND HOSES</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out'><p className='my-auto' onClick={()=>{
-                        Navigate(`/service?name=AIR CONDITIONING`)
-                      }}>AIR CONDITIONING</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
-                        Navigate(`/service?name=BRAKE REPAIR`)
-                      }}><p className='my-auto'>BRAKE REPAIR</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className='bordBot w-full p-4 text-xs flex justify-between align-middle hover:text-blue-500 ease-in-out' onClick={()=>{
-                        Navigate(`/service?name=TIRE AND WHEEL SERVICES`)
-                      }}><p className='my-auto'>TIRE AND WHEEL SERVICES</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className={`w-full p-4 ${paramaName === 'JUNK YOUR CAR' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                        Navigate(`/service?name=JUNK YOUR CAR`)
+                    }}><p className='my-auto'>JUNK YOUR CAR</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className={`w-full p-4 ${paramaName === 'GARAGE' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                        Navigate(`/service?name=GARAGE`)
+                      }}><p className='my-auto'>GARAGE</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className={`w-full p-4 ${paramaName === 'VEHICLE PARTS' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                        Navigate(`/service?name=VEHICLE PARTS`)
+                      }}><p className='my-auto'>VEHICLE PARTS</p> <span className='my-auto'><ArrowRight /></span></div>
+                    <div className={`w-full p-4 ${paramaName === 'WHEELS AND TIRES' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                        Navigate(`/service?name=WHEELS AND TIRES`)
+                      }}><p className='my-auto'>WHEELS AND TIRES</p> <span className='my-auto'><ArrowRight /></span></div>
                 </div>
             </div>
 
@@ -75,25 +69,6 @@ function MainService() {
                 <p className='mt-[50px]'>Our professionals know how to handle a wide range of car services. Whether you drive a passenger car or medium sized truck or SUV, our mechanics strive to ensure that your vehicle will be performing at its best.</p>
 
                 <h3 className='mt-[50px] text-gray-700'>PRICING</h3>
-
-                <span className='bodSpan mt-[10px]'></span>
-
-                <div className='w-full flex mt-[50px]'>
-                    <div className='bodRight flex flex-col flex-1'>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-end align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>Front Brakes Repair</p></div>
-                        <div className='bord bg-white w-full p-4 text-sm flex justify-end align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>Rear Brakes Repair</p></div>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-end align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>Rear Brakes Shoes</p></div>
-                        <div className='bord bg-white w-full p-4 text-sm flex justify-end align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>Axle</p></div>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-end align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>Starters / Alternators</p></div>
-                    </div>
-                    <div className='flex flex-col flex-1'>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-start align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>$49.95</p></div>
-                        <div className='bord bg-white w-full p-4 text-sm flex justify-start align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>$59.95</p></div>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-start align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>$65.25</p></div>
-                        <div className='bord bg-white w-full p-4 text-sm flex justify-start align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>$149.95 Each</p></div>
-                        <div className='bord bg-gray-100 w-full p-4 text-sm flex justify-start align-middle hover:text-blue-500 ease-in-out'><p className='my-auto'>$225.95 Plus Parts</p></div>
-                    </div>
-                </div>
 
 
                 <div className='flex flex-col md:flex-row w-full gap-[20px] mt-[50px]'>

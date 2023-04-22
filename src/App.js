@@ -7,6 +7,7 @@ import Home from './components/Home/Home'
 import About from './components/Pages/About/About';
 import Services from './components/Pages/Services/Services';
 import MainService from './components/Pages/MainService/MainService';
+import Shop from './components/Pages/Shop/Shop';
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -40,6 +41,8 @@ function App() {
         <Header />
         <Routes>
             <Route exact path="/" element={ <Home /> }>
+            </Route>
+            <Route exact path="/360shop" element={ <Shop /> }>
             </Route>
             <Route exact path="/about" element={ <About /> }>
             </Route>

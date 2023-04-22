@@ -5,8 +5,6 @@ import FirstImg from "../../Assets/services/image_03.jpg"
 import SecondImg from "../../Assets/services/image_02.jpg"
 import ThirdImg from "../../Assets/services/image_05.jpg"
 import FourthImg from "../../Assets/services/image_09.jpg"
-import FifthImg from "../../Assets/services/image_08.jpg"
-import SixthImg from "../../Assets/services/image_06.jpg"
 import { ArrowRight } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 function Services() {
@@ -33,9 +31,9 @@ function Services() {
         <div className='flex flex-col min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
             <img src={FirstImg} alt="" className='imgeryy w-full h-full object-cover' />
             <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-              Navigate(`/service?name=ENGINE DIAGNOSTICS`)
+              Navigate(`/service?name=JUNK YOUR CAR`)
             }}>
-              <h3 className='text-gray-600'>ENGINE DIAGNOSTICS</h3>
+              <h3 className='text-gray-600'>JUNK YOUR CAR</h3>
               <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
             </div>
         </div>
@@ -43,9 +41,9 @@ function Services() {
         <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
           <img src={SecondImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-            Navigate(`/service?name=LUBE, OIL AND FILTERS`)
+            Navigate(`/service?name=GARAGE`)
           }}>
-            <h3 className='text-gray-600'>LUBE, OIL AND FILTERS</h3>
+            <h3 className='text-gray-600'>GARAGE</h3>
             <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
           </div>
         </div>
@@ -53,9 +51,9 @@ function Services() {
         <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
           <img src={ThirdImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-            Navigate(`/service?name=BELTS AND HOSES`)
+            Navigate(`/service?name=VEHICLE PARTS`)
           }}>
-            <h3 className='text-gray-600'>BELTS AND HOSES</h3>
+            <h3 className='text-gray-600'>VEHICLE PARTS</h3>
             <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
           </div>
         </div>
@@ -64,31 +62,11 @@ function Services() {
         <div className='flex flex-col min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
             <img src={FourthImg} alt="" className='imgeryy w-full h-full object-cover' />
             <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-              Navigate(`/service?name=AIR CONDITIONING`)
+              Navigate(`/service?name=WHEELS AND TIRES`)
             }}>
-              <h3 className='text-gray-600'>AIR CONDITIONING</h3>
+              <h3 className='text-gray-600'>WHEELS AND TIRES</h3>
               <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
             </div>
-        </div>
-
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
-          <img src={FifthImg} alt="" className='imgeryy w-full h-full object-cover' />
-          <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-            Navigate(`/service?name=BRAKE REPAIR`)
-          }}>
-            <h3 className='text-gray-600'>BRAKE REPAIR</h3>
-            <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
-          </div>
-        </div>
-
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
-          <img src={SixthImg} alt="" className='imgeryy w-full h-full object-cover' />
-          <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
-            Navigate(`/service?name=TIRE AND WHEEL SERVICES`)
-          }}>
-            <h3 className='text-gray-600'>TIRE AND WHEEL SERVICES</h3>
-            <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
-          </div>
         </div>
       </div>
     </div>
