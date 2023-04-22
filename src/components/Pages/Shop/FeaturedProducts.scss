@@ -1,0 +1,127 @@
+.featuredProducts {
+    margin: 50px auto;
+    width: 70%;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            flex: 2;
+            text-transform: capitalize;
+        }
+
+        p {
+            flex: 3;
+            margin: 10px;
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        margin: 10px auto;
+    }
+}
+
+/* 440px Mobile resposive */
+@media screen and (max-width: 440px) {
+    .featuredProducts {
+        margin: 50px auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            h1{
+                flex: 2;
+                text-transform: capitalize;
+            }
+    
+            p {
+                flex: 3;
+                margin: 10px;
+            }
+        }
+    
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+/* 540px Mobile resposive */
+@media screen and (min-width: 540px) and (max-width: 750px){
+    .featuredProducts {
+        margin: 50px auto;
+        width: 96%;
+    
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            h1{
+                flex: 2;
+                text-transform: capitalize;
+            }
+    
+            p {
+                flex: 3;
+                margin: 10px;
+            }
+        }
+    
+        .bottom {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4%;
+            margin: 10px auto;
+        }
+    }
+}
+
+/* 760px  to 1030px Mobile resposive */
+@media screen and (min-width: 760px) and (max-width: 1030px) {
+    .featuredProducts {
+        margin: 50px auto;
+        width: 96%;
+    
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            h1{
+                flex: 2;
+                text-transform: capitalize;
+            }
+    
+            p {
+                flex: 3;
+                margin: 10px;
+            }
+        }
+    
+        .bottom {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            margin: 10px auto;
+        }
+    }
+}

@@ -61,7 +61,7 @@ function Header() {
                     Navigate('/services');
                 }}>SERVICES</li>
                 <li className='md:mr-[30px] mt-auto mb-auto' onClick={()=>{
-                    Navigate('/animation');
+                    Navigate('/360shop');
                 }}>360 AUTO SHOP*</li>
 
                 <button className='buttonHead' onClick={()=>{
@@ -90,7 +90,7 @@ function Header() {
                         Navigate('/services');
                     }}>SERVICES</li>
                     <li className='border-b text-white' onClick={()=>{
-                        Navigate('/shop');
+                        Navigate('/360shop');
                     }}>360 AUTO SHOP*</li>
                     <li className='border-b text-white' onClick={()=>{
                         Navigate('/contacts');
