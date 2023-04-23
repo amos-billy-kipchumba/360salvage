@@ -88,9 +88,16 @@ function MainService() {
                         </div>
 
                         <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
-                            <input type='text' placeholder='Condition' className='flex flex-1 outline-none border p-2' />
                             <input type='text' placeholder='Location' className='flex flex-1 outline-none border p-2' />
+                            <select className='border p-2 flex-1'>
+                                <option>--Select service option--</option>
+                                <option>Repairs</option>
+                                <option>Towing service</option>
+                                <option>Spare part</option>
+                            </select>
                         </div>
+
+                        <textarea placeholder='Describe condition of your junk' className='flex flex-1 outline-none border p-2 mx-4 min-h-[30vh]'></textarea>
 
                         <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
                             <input type='text' placeholder='Spare part needed' className='flex flex-1 outline-none border p-2' />

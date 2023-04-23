@@ -3,7 +3,9 @@ import './Footer.css'
 import { Facebook, Instagram, LinkedIn, Twitter, YouTube } from '@mui/icons-material'
 
 import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
+import { useNavigate } from 'react-router-dom'
 function Footer() {
+  const Navigate = useNavigate()
   return (
     <div className='relative w-full min-h-[100vh] px-[0px] py-[0px] overflow-hidden mt-[100px] md:mt-[0]'>
       <img src={Greener} alt='' className='Rodni absolute bottom-0 rotate-180 w-[70%] right-0 translate-y-[-90px]' />
@@ -23,18 +25,34 @@ function Footer() {
           <div className='flex w-full md:flex2 flex-col px-[5px] md:px-[50px] mt-4 xl:mt-0'>
             <div className='flex flex-col md:flex md:flex-row justify-between text-white'>
               <div className='flex flex-col'>
-                <h3 className='text-green-400'>HOME</h3>
-                <p className='mt-[50px]'>About us</p>
-                <p className=''>Services</p>
-                <p className=''>News & Blog</p>
-                <p className=''>360 Salvage Shop®</p>
+                <h3 className='text-green-400' onClick={()=>{
+                  Navigate('/')
+                }}>HOME</h3>
+                <p className='mt-[50px] cursor-pointer hover:text-red-400' onClick={()=>{
+                  Navigate('/about')
+                }}>About us</p>
+                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                  Navigate('/services')
+                }}>Services</p>
+                <p className='cursor-pointer hover:text-red-400'>News & Blog</p>
+                <p className='cursor-pointer hover:text-red-400 ease-in-out' onClick={()=>{
+                  Navigate('/360shop')
+                }}>360 Salvage Shop®</p>
               </div>
               <div className='flex flex-col'>
                 <h3 className='text-green-400'>PRODUCT & SERVICES</h3>
-                <p className='mt-[50px]'>Sell my Car</p>
-                <p className=''>Vehicle Parts</p>
-                <p className=''>Wheels & Tyres</p>
-                <p className=''>Mechanical Services</p>
+                <p className='mt-[50px] cursor-pointer hover:text-red-400'  onClick={()=>{
+                  Navigate(`/service?name=JUNK YOUR CAR`)
+                }}>Junk your Car</p>
+                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                  Navigate(`/service?name=GARAGE`)
+                }}>Vehicle Parts</p>
+                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                  Navigate(`/service?name=WHEELS AND TIRES`)
+                }}>Wheels & Tyres</p>
+                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                  Navigate(`/service?name=VEHICLE PARTS`)
+                }}>Mechanical Services</p>
               </div>
             </div>
 

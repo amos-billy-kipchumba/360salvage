@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Shop.css'
 import { FeaturedData } from './Data'
 import FeaturedProducts from './FeaturedProducts';
 function Shop() {
-
+  //Scroll to the top on load-
+  useEffect(()=>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  },[]);
+  //End of Scroll to the top on load
   return (
     <div className='w-full flex flex-col bg-white'>
         <div className='w-full h-[25vh] lg:h-[20vh] md:h-[30vh] xl:h-[40vh] pb-8 flex flex-col justify-end bg-gray-100'>
