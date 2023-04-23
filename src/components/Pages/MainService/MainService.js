@@ -68,7 +68,43 @@ function MainService() {
 
                 <p className='mt-[50px]'>Our professionals know how to handle a wide range of car services. Whether you drive a passenger car or medium sized truck or SUV, our mechanics strive to ensure that your vehicle will be performing at its best.</p>
 
-                <h3 className='mt-[50px] text-gray-700'>PRICING</h3>
+                <h3 className='mt-[50px] text-gray-700'>GET {paramaName} SERVICE</h3>
+
+                <form className='flex flex-col w-full mt-8'>
+                    <h4 className='mb-2'>Person Info</h4>
+                    <div className='flex flex-col lg:flex-row gap-4 w-full border p-4'>
+                        <input type='text' placeholder='Your name' className='flex flex-1 outline-none border p-2' />
+                        <input type='phone' placeholder='Your phone' className='flex flex-1 outline-none border p-2' />
+                        <input type='email' placeholder='Your email' className='flex flex-1 outline-none border p-2' />
+                    </div>
+
+                    <h4 className='mb-2 mt-2'>Vehicle Info</h4>
+
+                    <div className='flex flex-col border'>
+                        <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
+                            <input type='text' placeholder='Make' className='flex flex-1 outline-none border p-2' />
+                            <input type='text' placeholder='Model' className='flex flex-1 outline-none border p-2' />
+                            <input type='text' placeholder='Year' className='flex flex-1 outline-none border p-2' />
+                        </div>
+
+                        <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
+                            <input type='text' placeholder='Condition' className='flex flex-1 outline-none border p-2' />
+                            <input type='text' placeholder='Location' className='flex flex-1 outline-none border p-2' />
+                        </div>
+
+                        <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
+                            <input type='text' placeholder='Spare part needed' className='flex flex-1 outline-none border p-2' />
+                            <input type='text' placeholder='Add link' className='flex flex-1 outline-none border p-2' />
+                        </div>
+
+                        <div className='flex flex-col gap-2 w-full p-4'>
+                            <h4>Attach file</h4>
+                            <input type='file' placeholder='Attach file' />
+                        </div>
+                    </div>
+
+                    <button className='bg-blue-400 text-white p-2 my-4 ml-auto'>Send message</button>
+                </form>
 
 
                 <div className='flex flex-col md:flex-row w-full gap-[20px] mt-[50px]'>
