@@ -8,7 +8,6 @@ function Card({item}) {
     <Link className='link' to={`/`} id="revelation">
         <div className='card_shop'>
             <div className='image_shop'>
-                <span>{item.isNew === true ? 'New' : 'Second hand' }</span>
                 <img src={item.img} alt="" className='mainImg' />
                 <img src={item.img2} alt="" className='secondImg' />
             </div>
