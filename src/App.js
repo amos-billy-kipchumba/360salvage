@@ -8,6 +8,7 @@ import About from './components/Pages/About/About';
 import Services from './components/Pages/Services/Services';
 import MainService from './components/Pages/MainService/MainService';
 import Shop from './components/Pages/Shop/Shop';
+import PrivacyPolicy from './components/Pages/PrivacyPolicy/PrivacyPolicy';
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -49,6 +50,8 @@ function App() {
             <Route exact path="/services" element={ <Services /> }>
             </Route>
             <Route exact path="/service" element={ <MainService /> }>
+            </Route>
+            <Route exact path="/privacy-policy" element={ <PrivacyPolicy /> }>
             </Route>
         </Routes>
         <Footer />

@@ -28,29 +28,29 @@ function Footer() {
                 <h3 className='text-green-400' onClick={()=>{
                   Navigate('/')
                 }}>HOME</h3>
-                <p className='mt-[50px] cursor-pointer hover:text-red-400' onClick={()=>{
+                <p className='transs mt-[50px] cursor-pointer hover:text-red-400' onClick={()=>{
                   Navigate('/about')
                 }}>About us</p>
-                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
                   Navigate('/services')
                 }}>Services</p>
-                <p className='cursor-pointer hover:text-red-400'>News & Blog</p>
-                <p className='cursor-pointer hover:text-red-400 ease-in-out' onClick={()=>{
+                <p className='transs cursor-pointer hover:text-red-400'>News & Blog</p>
+                <p className='transs cursor-pointer hover:text-red-400 ease-in-out' onClick={()=>{
                   Navigate('/360shop')
                 }}>360 Salvage Shop®</p>
               </div>
               <div className='flex flex-col'>
                 <h3 className='text-green-400'>PRODUCT & SERVICES</h3>
-                <p className='mt-[50px] cursor-pointer hover:text-red-400'  onClick={()=>{
+                <p className='transs mt-[50px] cursor-pointer hover:text-red-400'  onClick={()=>{
                   Navigate(`/service?name=JUNK YOUR CAR`)
                 }}>Junk your Car</p>
-                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
                   Navigate(`/service?name=GARAGE`)
                 }}>Vehicle Parts</p>
-                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
                   Navigate(`/service?name=WHEELS AND TIRES`)
                 }}>Wheels & Tyres</p>
-                <p className='cursor-pointer hover:text-red-400' onClick={()=>{
+                <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
                   Navigate(`/service?name=VEHICLE PARTS`)
                 }}>Mechanical Services</p>
               </div>
@@ -71,19 +71,19 @@ function Footer() {
           <div className='flex md:flex3 flex-col'>
             <h3 className='text-green-400'>FOLLOW US</h3>
             <div className='flex text-white gap-[30px] mt-[50px]'>
-              <span>
+              <span className='transs cursor-pointer hover:text-red-400'>
                 <Facebook />
               </span>
-              <span>
+              <span className='transs cursor-pointer hover:text-red-400'>
                 <Instagram />
               </span>
-              <span>
+              <span className='transs cursor-pointer hover:text-red-400'>
                 <Twitter />
               </span>
-              <span>
+              <span className='transs cursor-pointer hover:text-red-400'>
                 <YouTube />
               </span>
-              <span>
+              <span className='transs cursor-pointer hover:text-red-400'>
                 <LinkedIn />
               </span>
             </div>
@@ -104,13 +104,15 @@ function Footer() {
         <hr />
 
         <div className='flex flex-wrap md:flex flex-row text-white justify-around mt-[20px]'>
-          <p className=''>Site map</p>
-          <p className=''>Use of cookies</p>
-          <p className=''>Cookie Settings</p>
-          <p className=''>Legal Information</p>
-          <p className=''>Data Privacy</p>
-          <p className=''>Environment & Sustainability</p>
-          <p className=''>Anti- slavery Statement`</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Site map</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Use of cookies</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Cookie Settings</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Legal Information</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/privacy-policy`)
+          }}>Data Privacy</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Environment & Sustainability</p>
+          <p className='transs cursor-pointer hover:text-red-400'>Anti- slavery Statement`</p>
         </div>
       </div>
 
