@@ -19,3 +19,7 @@
 .flex3 {
     flex: 1;
 }
+
+.transs {
+    transition: all 0.3s ease-in-out;
+}
