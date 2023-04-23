@@ -110,7 +110,7 @@ function MainService() {
                         </div>
                     </div>
 
-                    <button className='bg-blue-400 text-white p-2 my-4 ml-auto'>Send message</button>
+                    <button className='bg-blue-400 text-white p-2 my-4 ml-auto'>Submit</button>
                 </form>
 
 
@@ -136,7 +136,7 @@ function MainService() {
                         <span className='bodSpan mt-[10px]'></span>
 
                         <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
-                            <div className='Ruga w-full'>
+                            <div className='Ruga w-full delay-300'>
                                 <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowOne(!showOne)
                                     if(showTwo === true) {
@@ -154,7 +154,7 @@ function MainService() {
                                 <p className={`text-sm mt-[20px] hidden text-gray-600 ${showOne && "gott"}`}>Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger ones.</p>
                             </div>
 
-                            <div className='Ruga w-full'>
+                            <div className='Ruga w-full delay-300'>
                                 <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowTwo(!showTwo)
                                     if(showOne === true) {
@@ -172,7 +172,7 @@ function MainService() {
                                 <p className={`text-sm mt-[20px] hidden text-gray-600 ${showTwo && "gott"}`}>Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger ones.</p>
                             </div>
 
-                            <div className='Ruga w-full'>
+                            <div className='Ruga w-full delay-300'>
                                 <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowThree(!showThree)
                                     if(showTwo === true) {
