@@ -49,8 +49,8 @@ function About() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>ABOUT US</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-blue-400'>ABOUT US</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
+                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>ABOUT US</span>
                 </h5>
             </div>
         </div>
@@ -61,15 +61,15 @@ function About() {
                 <p className='mt-[20px]'>We offer full range of garage services to vehicle owners in Tucson. Our professionals know how to handle a wide range of car services. Whether you drive a passenger car or medium sized truck or SUV, our mechanics strive to ensure that your vehicle will be performing at its best before leaving our car shop. Whether you drive a medium sized truck or passenger car or SUV, our mechanics strive to ensure.</p>
                 <h3 className='mt-[20px]'>WHY CHOOSE US</h3>
 
-                <span className='w-[100px] flex flex-col text-blue-500 RelSy mt-[10px]'></span>
+                <span className='w-[100px] flex flex-col text-green-500 RelSy mt-[10px]'></span>
 
-                <p className='flex align-middle mt-[20px]'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We make auto repair and maintenance more convenient for you</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We are a friendly, helpful and professional group of people</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>Our professionals know how to handle a wide range of car services</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We get the job done right — the first time</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>Same day service for most repairs and maintenance</p>
+                <p className='flex align-middle mt-[20px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We make auto repair and maintenance more convenient for you</p>
+                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We are a friendly, helpful and professional group of people</p>
+                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Our professionals know how to handle a wide range of car services</p>
+                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We get the job done right — the first time</p>
+                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Same day service for most repairs and maintenance</p>
 
-                <button className='mr-[auto] bg-blue-500 text-white px-[20px] py-[10px] mt-[20px]'>OUR SERVICES</button>
+                <button className='mr-[auto] bg-green-500 text-white px-[20px] py-[10px] mt-[20px]'>OUR SERVICES</button>
             </div>
             <div className='flex flex-1 flex-col'>
                 <div className='w-full h-[50vh]'>
@@ -126,7 +126,7 @@ function About() {
 
         <div className='bg-white w-full flex flex-col py-[100px]'>
             <h3 className='mx-auto text-gray-600'>COMPANY OVERVIEW</h3>
-            <span className='w-[100px] flex flex-col text-blue-400 Rely mt-[20px] mx-auto'></span>
+            <span className='w-[100px] flex flex-col text-green-400 Rely mt-[20px] mx-auto'></span>
 
             <h4 className='flex text-center mx-auto w-[50%] mt-[20px]'>We can help you with everything from an oil change to an engine change.
             We can handle any problem on both foreign and domestic vehicles.</h4>

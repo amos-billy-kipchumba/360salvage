@@ -7,3 +7,7 @@
     transition: all 1s ease;
     cursor: pointer;
 }
+
+.colRo {
+    color: rgb(106,185,78);
+}

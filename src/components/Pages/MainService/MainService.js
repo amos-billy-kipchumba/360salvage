@@ -26,8 +26,8 @@ function MainService() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>{paramaName}</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ SERVICE<span className='ml-1 text-blue-400'>{paramaName}</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
+                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ SERVICE<span className='ml-1 colRo'>{paramaName}</span>
                 </h5>
             </div> 
         </div>
@@ -35,16 +35,16 @@ function MainService() {
         <div className='w-full flex flex-col-reverse xl:flex-row bg-white px-[10px] xl:px-[100px] xl:py-[50px] gap-[20px]'>
             <div className='flex flex-col w-[70%] xl:w-[25%]'>
                 <div className='w-full flex flex-col'>
-                    <div className={`w-full p-4 ${paramaName === 'JUNK YOUR CAR' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                    <div className={`w-full p-4 ${paramaName === 'JUNK YOUR CAR' ? 'bg-green-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                         Navigate(`/service?name=JUNK YOUR CAR`)
                     }}><p className='my-auto'>JUNK YOUR CAR</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className={`w-full p-4 ${paramaName === 'GARAGE' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                    <div className={`w-full p-4 ${paramaName === 'GARAGE' ? 'bg-green-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                         Navigate(`/service?name=GARAGE`)
                       }}><p className='my-auto'>GARAGE</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className={`w-full p-4 ${paramaName === 'VEHICLE PARTS' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                    <div className={`w-full p-4 ${paramaName === 'VEHICLE PARTS' ? 'bg-green-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                         Navigate(`/service?name=VEHICLE PARTS`)
                       }}><p className='my-auto'>VEHICLE PARTS</p> <span className='my-auto'><ArrowRight /></span></div>
-                    <div className={`w-full p-4 ${paramaName === 'WHEELS AND TIRES' ? 'bg-blue-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
+                    <div className={`w-full p-4 ${paramaName === 'WHEELS AND TIRES' ? 'bg-green-600 text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                         Navigate(`/service?name=WHEELS AND TIRES`)
                       }}><p className='my-auto'>WHEELS AND TIRES</p> <span className='my-auto'><ArrowRight /></span></div>
                 </div>
@@ -94,15 +94,12 @@ function MainService() {
                                 <option>Repairs</option>
                                 <option>Towing service</option>
                                 <option>Spare part</option>
+                                <option>Junking</option>
                             </select>
                         </div>
 
-                        <textarea placeholder='Describe condition of your junk' className='flex flex-1 outline-none border p-2 mx-4 min-h-[30vh]'></textarea>
+                        <textarea placeholder='Describe condition of your car' className='flex flex-1 outline-none border p-2 mx-4 min-h-[30vh]'></textarea>
 
-                        <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
-                            <input type='text' placeholder='Spare part needed' className='flex flex-1 outline-none border p-2' />
-                            <input type='text' placeholder='Add link' className='flex flex-1 outline-none border p-2' />
-                        </div>
 
                         <div className='flex flex-col gap-2 w-full p-4'>
                             <h4>Attach file</h4>
@@ -110,7 +107,7 @@ function MainService() {
                         </div>
                     </div>
 
-                    <button className='bg-blue-400 text-white p-2 my-4 ml-auto'>Submit</button>
+                    <button className='bg-green-400 text-white p-2 my-4 ml-auto'>Submit</button>
                 </form>
 
 
@@ -124,11 +121,11 @@ function MainService() {
                             We offer a full range of garage services to vehicle owners in Tucson. We can help you with everything from an oil change to an engine change. We can handle any problem on both foreign and domestic vehicles.
                         </p>
 
-                        <p className='flex align-middle mt-[20px] text-sm'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We make auto repair more convenient for you</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We are a friendly, helpful and professional group of people</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We handle a wide range of car services</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>Same day service for most repairs and maintenance</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-blue-500 my-auto mr-[5px]'><CheckOutlined /></span>We get the job done right — the first time</p>
+                        <p className='flex align-middle mt-[20px] text-sm'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We make auto repair more convenient for you</p>
+                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We are a friendly, helpful and professional group of people</p>
+                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We handle a wide range of car services</p>
+                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Same day service for most repairs and maintenance</p>
+                        <p className='flex align-middle mt-[5px] text-sm'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We get the job done right — the first time</p>
                     </div>
                     <div className='flex flex-col flex-1'>
                         <h3 className=' text-gray-700'>POPULAR QUESTIONS</h3>

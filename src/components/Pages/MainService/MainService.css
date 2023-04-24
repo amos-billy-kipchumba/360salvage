@@ -10,7 +10,7 @@
 }
 
 .bodSpan {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(104,185,79);
     width: 80px;
 }
 
@@ -25,4 +25,8 @@
 
 .gott {
     display: flex;
+}
+
+.colRo {
+    color: rgb(106,185,78);
 }

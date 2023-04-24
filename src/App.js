@@ -55,7 +55,16 @@ function App() {
             </Route>
         </Routes>
         <Footer />
-        <h2 className={`magicBut text-sm z-10 ${scrollDirection === "down" ? "hide_banner" : "show_banner"}`}>Lets chat</h2>
+        <h2 className={`magicBut text-sm z-10 ${scrollDirection === "down" ? "hide_banner" : "show_banner"}`}>
+          <a
+            href="https://wa.me/27104300251"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lets chat
+          </a>
+        </h2>
       </div>
     </BrowserRouter>
   );

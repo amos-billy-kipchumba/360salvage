@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import AboutImg from '../Assets/Slides/The art of Salvage.png'
+
 function About() {
   return (
     <section className='max-w-[1240px] mx-auto px-1 py-8 md:px-4 md:py-16 grid sm:grid-cols-1 lg:grid-cols-2' id='about'>

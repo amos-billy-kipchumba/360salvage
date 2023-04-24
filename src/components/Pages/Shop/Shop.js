@@ -14,8 +14,8 @@ function Shop() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>360 SHOP</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-blue-400'>360SHOP</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
+                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>360SHOP</span>
                 </h5>
             </div> 
         </div>
