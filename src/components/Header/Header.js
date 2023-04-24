@@ -64,10 +64,9 @@ function Header() {
                     Navigate('/360shop');
                 }}>360 AUTO SHOP*</li>
 
-                <button className='buttonHead' onClick={()=>{
-                    Navigate('/speak-to-an-expert');
-                }}>
-                    SPEAK TO AN EXPERT
+                
+                <button className='buttonHead'>
+                    <a href="tel:+27104300251" className=''>SPEAK TO AN EXPERT</a>
                 </button>
             </ul>
 

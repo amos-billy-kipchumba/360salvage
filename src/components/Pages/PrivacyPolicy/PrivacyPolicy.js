@@ -12,22 +12,22 @@ function PrivacyPolicy() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>DATA PRIVACY</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-blue-400'>DATA PRIVACY</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
+                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>DATA PRIVACY</span>
                 </h5>
             </div>
         </div>
 
 
         <div className='flex flex-col bg-white w-full px-[10px] lg:px-[100px] py-[10px] lg:py-[50px]'>
-            <h2 className='text-blue-600'>Introduction</h2>
+            <h2 className='text-green-600'>Introduction</h2>
 
             <p className='mt-[20px] text-sm'>360 Salvage is committed to protecting the privacy of individuals and to complying with applicable personal data protection laws and regulations. We want you to feel comfortable about how we collect, process, secure and share your personal data. This Privacy Notice details the types of personal data we collect, how we use your personal data, who we share it with and how you can control its use.</p>
             <p className='mt-[20px] text-sm'>This Privacy Notice applies to the main personal data processing Airbus performs. Information relating to specific processing or tools may be detailed in a dedicated privacy notice.</p>
             <p className='mt-[20px] text-sm'>What is personal data?</p>
             <p className='mt-[20px] text-sm'>Personal data is information that can be used to identify a person either directly or indirectly. It includes information such as name, contact details, identification numbers, financial data, location data or online identifiers.</p>
 
-            <h1 className='text-blue-600 mt-[50px]'>What personal data do we use?</h1>
+            <h1 className='text-green-600 mt-[50px]'>What personal data do we use?</h1>
 
             <p className='mt-[20px] text-sm'>Depending on the nature of your relationship with Airbus, we collect, use and process the following categories of personal data:</p>
 
@@ -45,7 +45,7 @@ function PrivacyPolicy() {
                 <li>indirectly through the organisation you are working for if needed for a purpose listed below or information made publicly available.</li>
             </ul>
 
-            <h2 className='text-blue-600 mt-[50px]'>What are the purposes of the processing of your personal data?</h2>
+            <h2 className='text-green-600 mt-[50px]'>What are the purposes of the processing of your personal data?</h2>
 
             <p className='mt-[10px]'>Airbus may process your personal data for the following purposes: </p>
 

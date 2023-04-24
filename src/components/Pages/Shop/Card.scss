@@ -29,7 +29,18 @@
             .secondImg {
                 z-index: 2;
             }
+
+            .mainImg {
+                transform-origin: bottom top;
+                animation: scale 2000ms ease-in-out forwards;
+            }
         }
+
+        @keyframes scale {
+            to {
+              transform: scale(1.2);
+            }
+          }
 
         img {
             width: 100%;

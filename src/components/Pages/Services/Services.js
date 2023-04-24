@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import './Services.css'
 
-import FirstImg from "../../Assets/services/image_03.jpg"
-import SecondImg from "../../Assets/services/image_02.jpg"
+import FirstImg from "../../Assets/services/junk.jpg"
+import SecondImg from "../../Assets/services/garage.webp"
 import ThirdImg from "../../Assets/services/image_05.jpg"
-import FourthImg from "../../Assets/services/image_09.jpg"
+import FourthImg from "../../Assets/services/wheel.jpg"
 import { ArrowRight } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 function Services() {
@@ -20,8 +20,8 @@ function Services() {
           <div className='flex justify-between'>
               <h3 className='ml-[10px] md:ml-[100px] my-auto'>OUR SERVICES</h3>
 
-              <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle'>
-                  <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-blue-400'>OUR SERVICES</span>
+              <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-sm'>
+                  <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 colRo'>OUR SERVICES</span>
               </h5>
           </div> 
       </div>
@@ -34,7 +34,7 @@ function Services() {
               Navigate(`/service?name=JUNK YOUR CAR`)
             }}>
               <h3 className='text-gray-600'>JUNK YOUR CAR</h3>
-              <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
+              <span className='colRo hover:text-red-400'><ArrowRight /></span>
             </div>
         </div>
 
@@ -44,7 +44,7 @@ function Services() {
             Navigate(`/service?name=GARAGE`)
           }}>
             <h3 className='text-gray-600'>GARAGE</h3>
-            <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
+            <span className='colRo hover:text-red-400'><ArrowRight /></span>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ function Services() {
             Navigate(`/service?name=VEHICLE PARTS`)
           }}>
             <h3 className='text-gray-600'>VEHICLE PARTS</h3>
-            <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
+            <span className='colRo hover:text-red-400'><ArrowRight /></span>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ function Services() {
               Navigate(`/service?name=WHEELS AND TIRES`)
             }}>
               <h3 className='text-gray-600'>WHEELS AND TIRES</h3>
-              <span className='text-blue-400 hover:text-red-400'><ArrowRight /></span>
+              <span className='colRo hover:text-red-400'><ArrowRight /></span>
             </div>
         </div>
       </div>

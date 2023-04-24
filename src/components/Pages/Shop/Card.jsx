@@ -1,15 +1,13 @@
 import React from 'react'
 import "./Card.scss"
-import { Link } from 'react-router-dom'
 function Card({item}) {
 
 
   return (
-    <Link className='link' to={`/`} id="revelation">
+    <a href='https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479' className='link' id="revelation">
         <div className='card_shop'>
             <div className='image_shop'>
                 <img src={item.img} alt="" className='mainImg' />
-                <img src={item.img2} alt="" className='secondImg' />
             </div>
             <h2>{item.title}</h2>
             <div className='prices'>
@@ -18,7 +16,7 @@ function Card({item}) {
             </div>
             <h4>{item.remain} remaining</h4>
         </div>
-    </Link>
+    </a>
   )
 }
 
