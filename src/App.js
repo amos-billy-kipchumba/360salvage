@@ -9,6 +9,13 @@ import Services from './components/Pages/Services/Services';
 import MainService from './components/Pages/MainService/MainService';
 import Shop from './components/Pages/Shop/Shop';
 import PrivacyPolicy from './components/Pages/PrivacyPolicy/PrivacyPolicy';
+import Help from './components/Pages/Help/Help';
+import SiteMap from './components/Pages/SiteMap/SiteMap';
+import UseOfCookies from './components/Pages/UseOfCookies/UseOfCookies';
+import LegalInformation from './components/Pages/LegalInformation/LegalInformation';
+import EnvironmentAndSustainability from './components/Pages/EnvironmentAndSustainability/EnvironmentAndSustainability';
+import AntiSlaveryStatement from './components/Pages/AntiSlaveryStatement/AntiSlaveryStatement';
+import CookingSettings from './components/Pages/CookieSettings/CookingSettings';
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -52,6 +59,30 @@ function App() {
             <Route exact path="/service" element={ <MainService /> }>
             </Route>
             <Route exact path="/privacy-policy" element={ <PrivacyPolicy /> }>
+            </Route>
+
+            <Route exact path="/help" element={ <Help /> }>
+            </Route>
+            
+            <Route exact path="/search" element={ <Help /> }>
+            </Route>
+
+            <Route exact path="/site-map" element={ <SiteMap /> }>
+            </Route>
+
+            <Route exact path="/use-of-cookies" element={ <UseOfCookies /> }>
+            </Route>
+
+            <Route exact path="/cookie-settings" element={ <CookingSettings /> }>
+            </Route>
+
+            <Route exact path="/legal-information" element={ <LegalInformation /> }>
+            </Route>
+
+            <Route exact path="/environment-and-sustainability" element={ <EnvironmentAndSustainability /> }>
+            </Route>
+
+            <Route exact path="/anti-slavery-statement" element={ <AntiSlaveryStatement /> }>
             </Route>
         </Routes>
         <Footer />

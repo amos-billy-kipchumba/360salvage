@@ -32,17 +32,17 @@ function PrivacyPolicy() {
             <p className='mt-[20px] text-sm'>Depending on the nature of your relationship with Airbus, we collect, use and process the following categories of personal data:</p>
 
             <ul className='flex flex-col list-disc text-sm m-0 p-0'>
-                <li>Identification data such as name(s), family name(s), contact details (postal address, email, telephone number(s)), signature, citizenship/nationality, age, gender, date of birth, place of birth, ID number, passport number, social security number, picture/image, voice, videos, CCTV images, audio recordings, car registration and/or driver’s license.</li>
-                <li>Professional data such as CV, whether you are an employee of Airbus or one of its subsidiaries or a shareholder</li>
-                <li>Economic and financial data such as bank details and credit card details.</li>
-                <li>IT data such as IP address, user account, company personal identifier(s)/corporate IDs, security pass number, smartcards, Cookie identifiers and other tracking technologies, radio frequency identification tags, activity logs (from tools and protocols, apps, security building access control, etc.), passwords for access to IT systems and/or websites.</li>
+                <li className='ml-[20px]'>Identification data such as name(s), family name(s), contact details (postal address, email, telephone number(s)), signature, citizenship/nationality, age, gender, date of birth, place of birth, ID number, passport number, social security number, picture/image, voice, videos, CCTV images, audio recordings, car registration and/or driver’s license.</li>
+                <li className='ml-[20px]'>Professional data such as CV, whether you are an employee of Airbus or one of its subsidiaries or a shareholder</li>
+                <li className='ml-[20px]'>Economic and financial data such as bank details and credit card details.</li>
+                <li className='ml-[20px]'>IT data such as IP address, user account, company personal identifier(s)/corporate IDs, security pass number, smartcards, Cookie identifiers and other tracking technologies, radio frequency identification tags, activity logs (from tools and protocols, apps, security building access control, etc.), passwords for access to IT systems and/or websites.</li>
             </ul>
 
             <p className='mt-[20px]'>We may collect this personal data:</p>
 
             <ul className='flex flex-col list-disc text-sm m-0 p-0'>
-                <li>directly from you when you complete a form and you provide us such information, and/or </li>
-                <li>indirectly through the organisation you are working for if needed for a purpose listed below or information made publicly available.</li>
+                <li className='ml-[20px]'>directly from you when you complete a form and you provide us such information, and/or </li>
+                <li className='ml-[20px]'>indirectly through the organisation you are working for if needed for a purpose listed below or information made publicly available.</li>
             </ul>
 
             <h2 className='text-green-600 mt-[50px]'>What are the purposes of the processing of your personal data?</h2>

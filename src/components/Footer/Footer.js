@@ -104,15 +104,27 @@ function Footer() {
         <hr />
 
         <div className='flex flex-wrap md:flex flex-row text-white justify-around mt-[20px]'>
-          <p className='transs cursor-pointer hover:text-red-400'>Site map</p>
-          <p className='transs cursor-pointer hover:text-red-400'>Use of cookies</p>
-          <p className='transs cursor-pointer hover:text-red-400'>Cookie Settings</p>
-          <p className='transs cursor-pointer hover:text-red-400'>Legal Information</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/site-map`)
+          }}>Site map</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/use-of-cookies`)
+          }}>Use of cookies</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/cookie-settings`)
+          }}>Cookie Settings</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/legal-information`)
+          }}>Legal Information</p>
           <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
             Navigate(`/privacy-policy`)
           }}>Data Privacy</p>
-          <p className='transs cursor-pointer hover:text-red-400'>Environment & Sustainability</p>
-          <p className='transs cursor-pointer hover:text-red-400'>Anti- slavery Statement`</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/environment-and-sustainability`)
+          }}>Environment & Sustainability</p>
+          <p className='transs cursor-pointer hover:text-red-400' onClick={()=>{
+            Navigate(`/anti-slavery-statement`)
+          }}>Anti- slavery Statement`</p>
         </div>
       </div>
 
