@@ -32,7 +32,13 @@ function Banner() {
   //End of Scroll to the top on load
   return (
     <div className='container-slider' id="myList">
-      <video src={Vid} width='100%' height='100%' muted autoPlay='true' loop className='min-h-full min-w-full object-cover' />
+        <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
+                <source
+                src={Vid}
+                type="video/mp4"
+                />
+                Your browser does not support the video tag.
+        </video>
         {SlideData && SlideData.map((object, index)=>{
           return(
           <section className={sliderIndex === index + 1 ? "slide active-anim h-full w-full" : "slide h-full w-full"} key={index} id='home'>
