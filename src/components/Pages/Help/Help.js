@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import './Help.css'
 import HelpImg from '../../Assets/Slides/Use This Exact Image for Landing Page-02.png'
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
-
+import {useNavigate} from 'react-router-dom'
 import HelpData from './HelpData';
 function Help() {
     const [showOne, setShowOne] = useState(false);
 
     const [searchFul, setSearchFul] = useState('');
+
+    const Navigate = useNavigate()
 
   return (
     <div className='AboutPum w-full flex flex-col'>
@@ -67,23 +69,30 @@ function Help() {
         </div>
 
         <div className='w-full bg-white flex flex-wrap px-[10px] xl:px-[100px] py-[20px] xl:py-[50px] gap-[5%] gap-y-8'>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
+            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder' onClick={()=>{
+                Navigate('/contact')
+            }}>
                 Contact us
             </div>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
-                360 Auctions
+            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder' onClick={()=>{
+                Navigate('/360shop')
+            }}>
+                360 Shop
             </div>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
+            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder' onClick={()=>{
+                Navigate(`/service?name=VEHICLE PARTS`)
+            }}>
                 Parts
             </div>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
+            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder' onClick={()=>{
+                Navigate(`/service?name=WHEELS AND TIRES`)
+            }}>
                 Wheel and tires
             </div>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
+            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder' onClick={()=>{
+                Navigate(`/service?name=JUNK YOUR CAR`)
+            }}>
                 Sell my car
-            </div>
-            <div className='w-[90%] md:w-[45%] lg:w-[30%] p-4 flex align-middle justify-center helpBorder mx-auto'>
-                Business solution
             </div>
         </div>
     </div>

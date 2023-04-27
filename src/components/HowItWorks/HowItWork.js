@@ -1,10 +1,57 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './HowItWork.css' 
 function HowItWork() {
+    useEffect(()=>{
+        window.addEventListener('scroll', reveal);
+  
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+        
+  
+            for(var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+  
+                var revealtop = reveals[i].getBoundingClientRect().top;
+  
+                var revealpoint = 50;
+  
+                if(revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+  
+  
+        window.addEventListener('scroll', reveal2);
+  
+        function reveal2() {
+            var reveals2 = document.querySelectorAll('.reveal2');
+        
+  
+            for(var i = 0; i < reveals2.length; i++) {
+                var windowheight2 = window.innerHeight;
+  
+                var revealtop2 = reveals2[i].getBoundingClientRect().y;
+  
+                var revealpoint2 = 50;
+  
+                if(revealtop2 < windowheight2 - revealpoint2) {
+                    reveals2[i].classList.add('active');
+                }
+                else {
+                    reveals2[i].classList.remove('active');
+                }
+            }
+        }
+
+    },[])
   return (
     <div className='HowItWorks max-w-[1200px] mx-auto px-4 py-16 min-h-[100vh] flex flex-col'>
-        <h2>HOW WE DO IT</h2>
-        <div className='HowItWorksCard flex flex-col lg:flex-row'>
+        <h2 className='reveal2'>HOW WE DO IT</h2>
+        <div className='reveal HowItWorksCard flex flex-col lg:flex-row'>
             <div className='w-full md:w-[400px] min-h-full flex align-middle bg-red-600/90 gap-8'>
                 <h1 className='font-bold text-9xl my-auto ml-2 opacity-40'>1</h1>
                 <h2 className='w-full md:w-[250px] text-white my-auto'>ENQUIRY AND 
@@ -18,7 +65,7 @@ function HowItWork() {
                 and collection…which is free!</h3>
             </div>
         </div>
-        <div className='HowItWorksCard flex flex-col lg:flex-row'>
+        <div className='reveal HowItWorksCard flex flex-col lg:flex-row'>
             <div className='w-full md:w-[400px] min-h-full flex align-middle bg-red-600/90 gap-8'>
                 <h1 className='font-bold text-9xl my-auto ml-2 opacity-40'>2</h1>
                 <h2 className='w-full md:w-[250px] text-white my-auto'>VERIFICATION 
@@ -33,7 +80,7 @@ function HowItWork() {
                 car would be handed over as well- That’s all!</h3>
             </div>
         </div>
-        <div className='HowItWorksCard flex flex-col lg:flex-row'>
+        <div className='reveal HowItWorksCard flex flex-col lg:flex-row'>
             <div className='w-full md:w-[400px] min-h-full relative flex align-middle bg-red-600/90 gap-8'>
                 <h1 className='font-bold text-9xl my-auto ml-2 opacity-40'>3</h1>
                 <h2 className='w-full md:w-[250px] text-white my-auto'>THEN
