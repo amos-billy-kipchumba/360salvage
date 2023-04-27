@@ -419,3 +419,22 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
+
+/*reveal*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.reveal.active:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}

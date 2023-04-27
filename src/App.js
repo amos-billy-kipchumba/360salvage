@@ -16,6 +16,7 @@ import LegalInformation from './components/Pages/LegalInformation/LegalInformati
 import EnvironmentAndSustainability from './components/Pages/EnvironmentAndSustainability/EnvironmentAndSustainability';
 import AntiSlaveryStatement from './components/Pages/AntiSlaveryStatement/AntiSlaveryStatement';
 import CookingSettings from './components/Pages/CookieSettings/CookingSettings';
+import Contact from './components/Pages/Contact/Contact';
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -83,6 +84,9 @@ function App() {
             </Route>
 
             <Route exact path="/anti-slavery-statement" element={ <AntiSlaveryStatement /> }>
+            </Route>
+
+            <Route exact path="/contact" element={ <Contact /> }>
             </Route>
         </Routes>
         <Footer />

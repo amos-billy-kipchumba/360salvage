@@ -6,10 +6,13 @@ import CountUp from "react-countup";
 import SlideData from '../../Banner/SliderData';
 import ArrowRight from '@mui/icons-material/ArrowRight';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import { useNavigate } from 'react-router-dom';
 function About() {
     //Start of sliding arrows
 
     const [sliderIndex, setSliderIndex] = useState(1);
+
+    const Navigate = useNavigate()
 
 
 
@@ -57,7 +60,7 @@ function About() {
 
         <div className='w-full flex flex-col md:flex-row bg-white px-[10px] md:px-[100px] py-[100px] gap-[25px]'>
             <div className='flex flex-1 flex-col'>
-                <h3 className='text-gray-700'>We offer a full range of garage services to vehicle owners located in Tucson area. All mechanic services are performed by highly qualified mechanics. We can handle any car problem.</h3>
+                <h3 className=' text-gray-700'>We offer a full range of garage services to vehicle owners located in Tucson area. All mechanic services are performed by highly qualified mechanics. We can handle any car problem.</h3>
                 <p className='mt-[20px]'>We offer full range of garage services to vehicle owners in Tucson. Our professionals know how to handle a wide range of car services. Whether you drive a passenger car or medium sized truck or SUV, our mechanics strive to ensure that your vehicle will be performing at its best before leaving our car shop. Whether you drive a medium sized truck or passenger car or SUV, our mechanics strive to ensure.</p>
                 <h3 className='mt-[20px]'>WHY CHOOSE US</h3>
 
@@ -69,7 +72,9 @@ function About() {
                 <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>We get the job done right — the first time</p>
                 <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Same day service for most repairs and maintenance</p>
 
-                <button className='mr-[auto] bg-green-500 text-white px-[20px] py-[10px] mt-[20px]'>OUR SERVICES</button>
+                <button className='reveal mr-[auto] bg-green-500 text-white px-[20px] py-[10px] mt-[20px]' onClick={()=>{
+                    Navigate('/services')
+                }}>OUR SERVICES</button>
             </div>
             <div className='flex flex-1 flex-col'>
                 <div className='w-full h-[50vh]'>

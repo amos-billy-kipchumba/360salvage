@@ -9,3 +9,45 @@
 .Rodni {
     mix-blend-mode:difference;
 }
+
+/*reveal*/
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.reveal.active:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+
+.reveal2 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    
+}
+.reveal2.active {
+    transform: translateX(10px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.reveal2.active:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.trysra:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
