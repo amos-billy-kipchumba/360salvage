@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './MainService.css'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { ArrowCircleRightOutlined, CheckOutlined, ArrowRight } from '@mui/icons-material';
-import FirstImg from '../../Assets/services/image_02.jpg'
-import SecondImg from "../../Assets/services/image_03.jpg"
+import FirstVid from '../../Assets/banner/lots-of-car-tires-in-a-backyard-starting-a-small-b-2023-02-28-19-43-10-utc.mp4'
 function MainService() {
     const [searchParams] = useSearchParams();
 
@@ -85,10 +84,13 @@ function MainService() {
             <div className='flex flex-col flex-1'>
                 <div className='w-full flex gap-[20px]'>
                     <div className='flex flex-1 h-[20vh] lg:h-[25vh] xl:h-[40vh]'>
-                        <img src={FirstImg} className='w-full h-full object-cover' alt='' />
-                    </div>
-                    <div className='flex flex-1 h-[20vh] lg:h-[25vh] xl:h-[40vh]'>
-                        <img src={SecondImg} className='w-full h-full object-cover' alt='' />
+                    <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
+                            <source
+                            src={FirstVid}
+                            type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                    </video>
                     </div>
                 </div>
 
