@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './MainService.css'
 import { useSearchParams, useNavigate } from 'react-router-dom'
-import { ArrowCircleRightOutlined, CheckOutlined, ArrowRight } from '@mui/icons-material';
+import { ArrowCircleRightOutlined, ArrowRight } from '@mui/icons-material';
 import FirstVid from '../../Assets/banner/lots-of-car-tires-in-a-backyard-starting-a-small-b-2023-02-28-19-43-10-utc.mp4'
 function MainService() {
     const [searchParams] = useSearchParams();
@@ -144,26 +144,14 @@ function MainService() {
 
 
                 <div className='flex flex-col md:flex-row w-full gap-[20px] mt-[50px]'>
-                    <div className='flex flex-col flex-1'>
-                        <h3 className=' text-gray-700'>WHY CHOOSE US</h3>
-
-                        <span className='bodSpan mt-[10px]'></span>
-
-
-                        <p className='flex align-middle mt-[20px] text-sm'><span className='colRoty my-auto mr-[5px]'><CheckOutlined /></span>Comprehensive Solutions: We offer a wide range of services, from salvage and recycling to repairs and maintenance. This means you can get everything you need under one roof, saving you time, money, and hassle.</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='colRoty my-auto mr-[5px]'><CheckOutlined /></span>Environmental Sustainability: We understand the importance of protecting the environment, which is why we are committed to using sustainable and ethical practices in all our operations. Our team ensures that all vehicles we collect are properly recycled, and we refurbish spare parts with the highest level of professionalism.</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='colRoty my-auto mr-[5px]'><CheckOutlined /></span>Expert Team: Our team is made up of experienced and knowledgeable professionals who are passionate about what they do. They are committed to providing you with top-notch services and support, helping you find the best solutions for your unique needs.</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='colRoty my-auto mr-[5px]'><CheckOutlined /></span>Nationwide Coverage: With our nationwide coverage, we make it easy for you to access our services no matter where you are in the country. This means you can rely on us to handle your project, no matter how big or small.</p>
-                        <p className='flex align-middle mt-[5px] text-sm'><span className='colRoty my-auto mr-[5px]'><CheckOutlined /></span>Competitive Pricing: We offer competitive pricing for all our services, ensuring that you get the best value for your money. Our pricing is transparent, and we always work with you to find the most cost-effective solutions for your needs.</p>
-                    </div>
-                    <div className='flex flex-col flex-1'>
+                    <div className='flex flex-col w-[98%] lg:w-[60%]'>
                         <h3 className=' text-gray-700'>POPULAR QUESTIONS</h3>
 
                         <span className='bodSpan mt-[10px]'></span>
 
                         <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
                             <div className='Ruga w-full delay-300'>
-                                <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowOne(!showOne)
                                     if(showTwo === true) {
                                         setShowTwo(false)
@@ -181,7 +169,7 @@ function MainService() {
                             </div>
 
                             <div className='Ruga w-full delay-300'>
-                                <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowTwo(!showTwo)
                                     if(showOne === true) {
                                         setShowOne(false)
@@ -199,7 +187,7 @@ function MainService() {
                             </div>
 
                             <div className='Ruga w-full delay-300'>
-                                <div className='w-full flex justify-around hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
                                     setShowThree(!showThree)
                                     if(showTwo === true) {
                                         setShowTwo(false)
