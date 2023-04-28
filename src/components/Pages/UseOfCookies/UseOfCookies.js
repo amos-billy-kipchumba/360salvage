@@ -1,25 +1,30 @@
 import React, {useEffect} from 'react'
 import './UseOfCookies.css'
+import { useNavigate } from 'react-router-dom';
 function UseOfCookies() {
     //Scroll to the top on load-
     useEffect(()=>{
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     },[]);
     //End of Scroll to the top on load
+
+    const Navigate = useNavigate()
   return (
     <div className='w-full flex flex-col'>
         <div className='w-full h-[25vh] lg:h-[20vh] md:h-[30vh] xl:h-[40vh] pb-8 flex flex-col justify-end bg-gray-100'>
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>Use of cookies</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>Use of cookies</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs cursor-wait' onClick={()=>{
+                    Navigate('/')
+                }}>
+                    <span className='mr-2 text-gray-600'>For better, for cars</span>
                 </h5>
             </div>
         </div>
 
         <div className='w-full px-[10px] lg:px-[100px] bg-white py-[20px] lg:py-[50px]'>
-            <h2>Cookie Policy</h2>
+            <h3>Cookie Policy</h3>
             <p className='mt-[20px]'>1 Information about our use of cookies</p>
             <p className='mt-[20px]'>1.1 This policy explains how we use cookies on www.360salvage.com</p>
             <p className='mt-[20px]'>1.2 We recommend that you read our cookies policy so that you are aware of how we use them and can take steps to reject or delete the cookies if you do not agree to them being used.</p>

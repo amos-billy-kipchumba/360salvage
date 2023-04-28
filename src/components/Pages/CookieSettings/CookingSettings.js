@@ -1,19 +1,23 @@
 import React, {useEffect} from 'react'
 import './CookieSettings.css'
+import { useNavigate } from 'react-router-dom';
 function CookingSettings() {
     //Scroll to the top on load-
     useEffect(()=>{
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     },[]);
     //End of Scroll to the top on load
+    const Navigate = useNavigate()
   return (
     <div className='w-full flex flex-col'>
         <div className='w-full h-[25vh] lg:h-[20vh] md:h-[30vh] xl:h-[40vh] pb-8 flex flex-col justify-end bg-gray-100'>
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>Cookie Settings</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>Cookie Settings</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs cursor-wait' onClick={()=>{
+                    Navigate('/')
+                }}>
+                    <span className='mr-2 text-gray-600'>For better, for cars</span>
                 </h5>
             </div>
         </div>

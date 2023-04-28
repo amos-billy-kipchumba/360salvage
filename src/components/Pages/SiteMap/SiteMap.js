@@ -17,14 +17,16 @@ function SiteMap() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>Site Map</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>Site map</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs cursor-wait' onClick={()=>{
+                    Navigate('/')
+                }}>
+                    <span className='mr-2 text-gray-600'>For better, for cars</span>
                 </h5>
             </div>
         </div>
 
         <div className='flex flex-col w-full px-[10px] xl:px-[100px] bg-white py-4 xl:py-8'>
-            <h2>HOME PAGE</h2>
+            <h3>HOME PAGE</h3>
             <p className='mt-[20px] flex align-middle gap-2 ml-[20px] cursor-pointer hover:text-red-400' onClick={()=>{
                 Navigate('/')
             }}><Link /> Front page of 360 salvage</p>

@@ -27,6 +27,14 @@
     display: flex;
 }
 
-.colRo {
+.colRoty {
     color: rgb(106,185,78);
+}
+
+.colRor {
+    color: rgb(42,73,76);
+}
+
+.colbg {
+    background-color: rgb(42,73,76);
 }

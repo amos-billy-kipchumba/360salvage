@@ -17,8 +17,10 @@ function Help() {
             <div className='flex justify-between'>
                 <h3 className='ml-[10px] md:ml-[100px] my-auto'>HELP</h3>
 
-                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs'>
-                    <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 text-green-400'>HELP</span>
+                <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs cursor-wait' onClick={()=>{
+                    Navigate('/')
+                }}>
+                    <span className='mr-2 text-gray-600'>For better, for cars</span>
                 </h5>
             </div>
         </div>

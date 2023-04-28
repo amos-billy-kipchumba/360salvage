@@ -52,52 +52,30 @@ function WeDo() {
     },[])
   return (
     <section className='w-full min-h-[120vh] relative overflow-hidden' id='services'>
-        <div className='WeDoOverlay px-[10px] md:px-[30px] lg:px-[100px] relative md:absolute w-full min-h-[100vh] flex flex-col'>
+        <div className='WeDoOverlay px-[10px] md:px-[30px] lg:px-[100px] relative md:relative w-full min-h-[200vh] lg:min-h-[100vh] flex flex-col'>
             <img src={Greener} alt='' className='absolute bottom-0 rotate-180 w-[70%]' />
             <h2 className='ml-8 md:ml-0'>WHAT WE DO</h2>
 
-            <div className='mx-auto px-4 py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-[5%] mb-8 md:mb-0'>
-                <div className='reveal text-white p-10 relative'>
+            <div className='mx-auto px-4 py-16 flex flex-col md:flex-row md:flex-wrap w-full gap-x-[5%] gap-y-[30px] mb-8 md:mb-0'>
+                <div className='reveal text-white p-10 relative w-[98%] md:w-[45%] xl:w-[30%]'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
-                    <h2>JUNKING</h2>
-                    <h4 className='mt-[20px]'>We work with customers and
-                    clients to offer affordable, 
-                   sustainable motoring solutions
-                   that don’t cost the Earth. Our 
-                   services are for customers
-                   looking for quality used car
-                   parts and businesses who want
-                    to maximize the financial and 
-                   environmental return of their 
-                   vehicles.</h4>
+                    <h2>SELL OR JUNK YOUR CAR</h2>
+                    <h4 className='mt-[20px]'>Hassle-free options to sell or junk your car. We take care of everything from pickup to disposal, ensuring an environmentally friendly process. Trust us to handle it all efficiently and ethically.</h4>
                 </div>
-                <div className='reveal text-white p-10 relative'>
+                <div className='reveal text-white p-10 relative w-[98%] md:w-[45%] xl:w-[30%]'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
-                    <h2>MECHANICAL SOLUTIONS</h2>
-                    <h4 className='mt-[20px]'>We work with customers and
-                    clients to offer affordable, 
-                   sustainable motoring solutions
-                   that don’t cost the Earth. Our 
-                   services are for customers
-                   looking for quality used car
-                   parts and businesses who want
-                    to maximize the financial and 
-                   environmental return of their 
-                   vehicles.</h4>
+                    <h2>GARAGE SERVICES</h2>
+                    <h4 className='mt-[20px]'>Comprehensive garage services for all vehicle owners in South Africa. Our highly qualified mechanics can handle any car problem, from routine maintenance to engine changes. Trust us to keep your vehicle performing at its best.</h4>
                 </div>
-                <div className='reveal text-white p-10 relative'>
+                <div className='reveal text-white p-10 relative w-[98%] md:w-[45%] xl:w-[30%]'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2>VEHICLE PARTS</h2>
-                    <h4 className='mt-[20px]'>We work with customers and
-                    clients to offer affordable, 
-                   sustainable motoring solutions
-                   that don’t cost the Earth. Our 
-                   services are for customers
-                   looking for quality used car
-                   parts and businesses who want
-                    to maximize the financial and 
-                   environmental return of their 
-                   vehicles.</h4>
+                    <h4 className='mt-[20px]'>Affordable, environmentally friendly used vehicle parts. Matching parts for personal vehicle improvements or damage-repairable vehicles. Flexible delivery options and thorough cleaning and inspection before reaching their new vehicles.</h4>
+                </div>
+                <div className='reveal text-white p-10 relative w-[98%] md:w-[45%] xl:w-[30%]'>
+                    <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
+                    <h2>WHEELS & TYRES</h2>
+                    <h4 className='mt-[20px]'>Reliable, high-quality wheels and tires. Wide selection of new and used tires to meet all your needs. Our expert team provides advice and guidance to find the perfect fit for your vehicle. Trust us for top-tier service and competitive prices.</h4>
                 </div>
             </div>
 

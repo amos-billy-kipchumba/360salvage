@@ -20,15 +20,17 @@ function Services() {
           <div className='flex justify-between'>
               <h3 className='ml-[10px] md:ml-[100px] my-auto'>OUR SERVICES</h3>
 
-              <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-sm'>
-                  <span className='mr-2 text-gray-600'>YOU ARE HERE:</span>/ <span className='ml-1 colRo'>OUR SERVICES</span>
+              <h5 className='mr-[10px] md:mr-[100px] hidden md:flex align-middle text-xs cursor-wait' onClick={()=>{
+                  Navigate('/')
+              }}>
+                  <span className='mr-2 text-gray-600'>For better, for cars</span>
               </h5>
           </div> 
       </div>
 
 
       <div className='bg-white mx-auto px-4 xl:px-[100px] py-[50px] flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[0%]'>
-        <div className='flex flex-col min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
+        <div className='flex flex-col min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
             <img src={FirstImg} alt="" className='imgeryy w-full h-full object-cover' />
             <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=JUNK YOUR CAR`)
@@ -38,7 +40,7 @@ function Services() {
             </div>
         </div>
 
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
+        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
           <img src={SecondImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=GARAGE`)
@@ -48,7 +50,7 @@ function Services() {
           </div>
         </div>
 
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
+        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
           <img src={ThirdImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=VEHICLE PARTS`)
@@ -59,7 +61,7 @@ function Services() {
         </div>
 
 
-        <div className='flex flex-col min-w-[90%] md:min-w-[48%] md:max-w-[48%] lg:min-w-[30%] lg:max-w-[30%] xl:mt-[0px]'>
+        <div className='flex flex-col min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
             <img src={FourthImg} alt="" className='imgeryy w-full h-full object-cover' />
             <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=WHEELS AND TIRES`)

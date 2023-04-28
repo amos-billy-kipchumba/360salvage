@@ -438,3 +438,7 @@
     transition: 0.1s ease-in;
     cursor: pointer;
 }
+
+.colRo {
+    color: rgb(42,73,76);
+}
