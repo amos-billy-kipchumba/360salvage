@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import './About.css'
 import { CarRepair, ChargingStation, CheckOutlined, DisplaySettings, OilBarrel, SensorOccupied, Speaker } from '@mui/icons-material'
 import AboutImg2 from '../../Assets/Slides/The art of Salvage.png'
+import AboutImg3 from '../../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car.png'
+import AboutImg4 from '../../Assets/Slides/Vehicle Salvaged.png'
 import { useNavigate } from 'react-router-dom';
 function About() {
     //Start of sliding arrows
@@ -57,10 +59,10 @@ function About() {
 
                 <div className='flex mt-[25px] gap-[25px]'>
                     <div className='flex flex-1 h-[20vh]'>
-                        <img src={AboutImg2} className='w-full h-full object-cover' alt='' />
+                        <img src={AboutImg3} className='w-full h-full object-cover' alt='' />
                     </div>
                     <div className='flex flex-1 h-[20vh]'>
-                        <img src={AboutImg2} className='w-full h-full object-cover' alt='' />
+                        <img src={AboutImg4} className='w-full h-full object-cover' alt='' />
                     </div>
                 </div>
 
