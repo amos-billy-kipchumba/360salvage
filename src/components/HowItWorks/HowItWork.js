@@ -59,10 +59,7 @@ function HowItWork() {
                     COLLECTION</h2>
             </div>
             <div className='flex flex-grow min-h-full p-8'>
-                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>Simply share contact details and fill in the <span className='flex align-middle text-green-400 underline'>Vehicle Submission 
-                Form</span> to give us more information about the scrap car location 
-                and condition. We’ll then get in touch to plan for verification 
-                and collection…which is free!</h3>
+                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>Share your contact details and fill out our Vehicle Submission Form to provide more information about your scrap car's location and condition. We'll contact you to plan for free verification and collection.</h3>
             </div>
         </div>
         <div className='reveal HowItWorksCard flex flex-col lg:flex-row'>
@@ -73,26 +70,16 @@ function HowItWork() {
                     TRANSFER</h2>
             </div>
             <div className='flex flex-grow min-h-full p-8'>
-                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>You will arrange a convenient time for us to collect your old car.
-                One of our representative will come along to pick it up at a time 
-                and date agreed with you. At this point the final price is agreed 
-                and payment made. Any paper work eg. logbook for your scrap 
-                car would be handed over as well- That’s all!</h3>
+                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>Schedule a convenient time for us to collect your old car. One of our representatives will pick it up at the agreed time and date. We'll agree on the final price and make the payment. We'll also hand over any necessary paperwork, such as the logbook for your scrap car.</h3>
             </div>
         </div>
         <div className='reveal HowItWorksCard flex flex-col lg:flex-row'>
             <div className='w-full md:w-[400px] min-h-full relative flex align-middle bg-red-600/90 gap-8'>
                 <h1 className='font-bold text-9xl my-auto ml-2 opacity-40'>3</h1>
-                <h2 className='w-full md:w-[250px] text-white my-auto'>THEN
-                    360 SALVAGE 
-                    BEGINS</h2>
+                <h2 className='w-full md:w-[250px] text-white my-auto'>360 SALVAGE BEGINS</h2>
             </div>
             <div className='flex flex-grow min-h-full p-8'>
-                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>If your car is still roadworthy , we’ll try and finding a buyer for it. 
-                If the car’s unsuitable to be reused, we’ll remove any car parts 
-                that we can reuse and sell those on. We’ll then recycle the rest 
-                of the car in an authorized treatment facility so we can get 
-                money for the scrap metal.</h3>
+                <h3 className='w-full md:w-[600px] m-auto text-gray-600 font-normal'>If your car is still roadworthy, we'll find a buyer for it. If the car can't be reused, we'll remove any reusable car parts and sell them. We'll then recycle the rest of the car at an authorized treatment facility and get money for the scrap metal.</h3>
             </div>
         </div>
     </div>

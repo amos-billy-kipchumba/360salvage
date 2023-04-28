@@ -30,7 +30,7 @@
     
 }
 .reveal2.active {
-    transform: translateX(10px);
+    transform: translateX(0px);
     opacity: 1;
     transition: all 1.5s ease;
 }

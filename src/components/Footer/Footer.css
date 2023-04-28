@@ -23,3 +23,7 @@
 .transs {
     transition: all 0.3s ease-in-out;
 }
+
+.colGre {
+    color: rgb(139,197,63);
+}

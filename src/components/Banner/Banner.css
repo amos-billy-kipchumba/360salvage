@@ -6,10 +6,10 @@
 
 
 
-.BannerOverlayContainer > h3 {
+.BannerOverlayContainer > h4 {
     color: rgb(106, 185, 79);
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 25px;
     display: flex;
 }
 
@@ -218,10 +218,10 @@
         flex-wrap: wrap;
     }
     
-    .BannerOverlayContainer > h3 {
+    .BannerOverlayContainer > h4 {
         color: rgb(106, 185, 79);
         font-size: 18px;
-        line-height: 40px;
+        line-height: 30px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -377,4 +377,22 @@
     .vanish {
         display: none;
     }
+}
+
+
+.reveal4 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    
+}
+.reveal4.active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.reveal4.active:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    cursor: pointer;
 }
