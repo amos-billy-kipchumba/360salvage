@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import './Faq.css'
 import Green from "../Assets/logo/Icon_Green_Leaf-11-removebg-preview.png"
 import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
+import { useNavigate } from 'react-router-dom'
 function Faq() {
     useEffect(()=>{
         window.addEventListener('scroll', reveal);
@@ -50,6 +51,8 @@ function Faq() {
         }
 
     },[])
+
+    const Navigate = useNavigate()
   return (
     <div className='min-h-[100vh] w-full flex flex-col mb-[50px]'>
         <h3 className='mt-[100px] ml-[20px] md:ml-[100px] text-gray-700'>FREQUENTLY ASKED QUESTIONS[FAQs]</h3>
@@ -62,7 +65,9 @@ function Faq() {
                     <h2 className='mt-[50px]'>How do you 
                     scrap your car
                     for money?</h2>
-                    <h4 className='mt-[50px] text-green-500'>LEARN MORE</h4>
+                    <h4 className='mt-[50px] text-green-500' onClick={()=>{
+                        Navigate(`/learn-more?question=How do you scrap your car for money?&answer=To scrap your car for money with 360 Salvage, simply contact us through our website or give us a call. We'll provide you with a free quote based on your car's condition and location, and then arrange for a convenient time to pick up your vehicle. Once we collect your car, we'll handle everything else, including disposal and payment.`)
+                    }}>LEARN MORE</h4>
 
                     <hr />
 
@@ -75,7 +80,9 @@ function Faq() {
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2 className='mt-[50px] w-[250px]'>What type of cars does 360 Salvage take?</h2>
 
-                    <h4 className='mt-[50px]'>LEARN MORE</h4>
+                    <h4 className='mt-[50px]' onClick={()=>{
+                        Navigate(`/learn-more?question=What type of cars does 360 Salvage take?&answer=At 360 Salvage, we take all kinds of cars, regardless of their make, model, or condition. Whether your car is damaged, totaled, or simply no longer roadworthy, we'll take care of it. We even take cars without a title, so don't hesitate to reach out to us if you're unsure whether we can take your vehicle.`)
+                    }}>LEARN MORE</h4>
 
                     <hr />
                     <img src={Greener} alt='' className='Rodni absolute bottom-0 rotate-180 w-[80%]' />
@@ -87,7 +94,9 @@ function Faq() {
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2 className='mt-[50px] w-[250px]'>What solutions do we have for corporations?</h2>
 
-                    <h4 className='mt-[50px] text-green-500'>LEARN MORE</h4>
+                    <h4 className='mt-[50px] text-green-500' onClick={()=>{
+                        Navigate(`/learn-more?question=What solutions do we have for corporations?&answer=360 Salvage offers a range of solutions for corporates, including tailored salvage and recycling programs, online auctions, and GDPR-compliant data management processes. We work with a variety of industries, from insurance companies to banks, schools, and government organizations, to provide efficient and sustainable solutions for their vehicle salvage and disposal needs. Contact us to learn more about how we can assist your corporate organization.`)
+                    }}>LEARN MORE</h4>
 
                     <hr />
 

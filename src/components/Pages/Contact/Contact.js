@@ -24,24 +24,26 @@ function Contact() {
         </div>
 
         <div className='bg-white md:flex w-full justify-between flex-col px-[20px] lg:px-[100px] py-[30px] lg:pb-[50px]'>
-            <div className='w-[full] flex gap-[2%] mt-2'>
-                <input type='text' placeholder='Your name' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
-                <select className='border p-2 flex-1 w-[49%]'>
-                  <option>--Select service option--</option>
-                  <option>Repairs</option>
-                  <option>Towing service</option>
-                  <option>Spare part</option>
-                  <option>Junking</option>
-                </select>
-            </div>
-            <div className='w-[full] flex gap-[2%] mt-2'>
-                <input type='email' placeholder='Your email' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
-                <input type='phone' placeholder='Your mobile no' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
-            </div>
+            <div className='xds bg-white md:flex w-full justify-between flex-col p-4 lg:p-8'>
+                <div className='w-[full] flex gap-[2%] mt-2'>
+                    <input type='text' placeholder='Your name' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
+                    <select className='border p-2 flex-1 w-[49%]'>
+                    <option>--Select service option--</option>
+                    <option>Repairs</option>
+                    <option>Towing service</option>
+                    <option>Spare part</option>
+                    <option>Junking</option>
+                    </select>
+                </div>
+                <div className='w-[full] flex gap-[2%] mt-2'>
+                    <input type='email' placeholder='Your email' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
+                    <input type='phone' placeholder='Your mobile no' className='w-[49%] outline-none p-2 border border-gray-200 bg-transparent' />
+                </div>
 
-            <textarea className='w-full min-h-[20vh] border bg-white border-gray-200 my-[20px] p-[10px] outline-none' placeholder='Your inquiry'></textarea>
-            
-            <button className='ml-auto bg-green-400 text-white p-[10px] mb-[20px]'>SEND MESSAGE</button>
+                <textarea className='w-full min-h-[20vh] border bg-white border-gray-200 my-[20px] p-[10px] outline-none' placeholder='Your inquiry'></textarea>
+                
+                <button className='ml-auto bg-green-400 text-white p-[10px] mb-[20px]'>SEND MESSAGE</button>
+            </div>
         </div>
     </div>
   )

@@ -2,8 +2,10 @@ import React from 'react'
 import "./FeaturedProducts.scss"
 import Card from './Card'
 
-function FeaturedProducts({item, no}) {
- 
+function FeaturedProducts({item, price}) {
+  // if (val.title.toLowerCase().includes(name.toLowerCase())) {
+  //   return val
+  // }
   return (
     <>
       <div className='featuredProducts'>
@@ -13,7 +15,21 @@ function FeaturedProducts({item, no}) {
           <div className='bottom'>
               {item.length > 0 ?
                 <>
-                  {item && item.map((object, index)=>(
+                  {item && item.filter((val) => {
+
+                    
+                    if (val.price.toString().includes(price.toString())) {
+                      return val
+                    }
+
+                    if (val.title.toString().includes(price.toString())) {
+                      return val
+                    }
+
+                    else {
+                      return ""
+                    }
+                  }).map((object, index)=>(
                     <Card key={index} item={object} />
                   ))}
                 </>

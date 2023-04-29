@@ -38,3 +38,14 @@
 .colbg {
     background-color: rgb(42,73,76);
 }
+
+.xds {
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 300ms ease-in;
+}
+
+.scf:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(42,73,76);
+}
