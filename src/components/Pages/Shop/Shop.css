@@ -1,0 +1,32 @@
+.troto {
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 300ms ease-in;
+    cursor: pointer;
+}
+
+.scf:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(42,73,76);
+}
+
+.btyr {
+    border: 1px solid rgb(42,73,76);
+    color: rgb(42,73,76);
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+.btyr:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(42,73,76);
+    color: white;
+}
+
+.thg {
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(42,73,76);
+    color: white;
+}

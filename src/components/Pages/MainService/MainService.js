@@ -64,7 +64,7 @@ function MainService() {
         </div>
 
         <div className='w-full flex flex-col-reverse xl:flex-row bg-white px-[10px] xl:px-[100px] xl:py-[50px] gap-[20px]'>
-            <div className='flex flex-col w-[70%] xl:w-[25%]'>
+            <div className='xds flex flex-col w-[70%] xl:w-[25%] mb-[30px] lg:mb-auto'>
                 <div className='w-full flex flex-col'>
                     <div className={`w-full p-4 ${paramaName === 'JUNK YOUR CAR' ? 'colbg text-white' : 'text-gray-800'} text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                         Navigate(`/service?name=JUNK YOUR CAR`)
@@ -102,7 +102,7 @@ function MainService() {
 
                 <h3 className='mt-[50px] text-gray-700'>GET {paramaName} SERVICE</h3>
 
-                <form className='flex flex-col w-full mt-8'>
+                <form className='xds flex flex-col w-full mt-8 p-4 lg:p-8'>
                     <h4 className='mb-2'>Person Info</h4>
                     <div className='flex flex-col lg:flex-row gap-4 w-full border p-4'>
                         <input type='text' placeholder='Your name' className='flex flex-1 outline-none border p-2' />
@@ -139,7 +139,7 @@ function MainService() {
                         </div>
                     </div>
 
-                    <button className='bg-green-400 text-white p-2 my-4 ml-auto'>Submit</button>
+                    <button className='scf bg-green-400 text-white p-2 my-4 ml-auto'>Submit</button>
                 </form>
 
 
