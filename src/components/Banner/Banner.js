@@ -61,10 +61,10 @@ function Banner() {
           )
       })}
 
-      <div className='dots'>
+      <div className='dotsy'>
       {Array.from({length: SlideData.length}).map((item, index) => (
         <div 
-        className={sliderIndex === index + 1 ? "dot dot-outlined" : "dot"}
+        className={sliderIndex === index + 1 ? "doty dot-outlinedy" : "doty"}
         onClick={()=> {
           moveDot(index + 1);
         }} key={index}></div>

@@ -6,14 +6,14 @@ import ThirdImage from '../Assets/Slides/Vehicle Salvaged.png'
 const SlideData = [
     {
         Image: SecondImage,
-        h2: 'Buying or Selling with 360 Salvage',
-        h4: `Hassle-free process ensures that you can either sell or buy with ease, knowing that you're getting a fair and transparent deal every time.`,
+        h2: 'Junk Your Car with 360 Salvage',
+        h4: `Hassle-free process ensures that you can junk your car with ease, knowing that you're getting a fair and transparent deal every time.`,
         tag: "GET QUOTE NOW"
     },
     {
         Image: SecondImage,
         h2: 'Solutions for Businesses',
-        h4: `Tailored solutions for businesses looking to manage their vehicle fleets. Our team of experts is here to help you optimize your fleet management and save you time and money.`,
+        h4: `End-to-end vehicle remarketing solutions for businesses looking to maximise the financial return on their vehicles`,
         tag: "FIND OUT MORE",
     },
     {
