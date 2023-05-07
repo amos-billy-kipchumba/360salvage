@@ -94,7 +94,7 @@ function MainService() {
                     </div>
                 </div>
 
-                <h3 className='mt-[50px] text-gray-700'>SERVICE OVERVIEW</h3>
+                <h3 className='mt-[50px] text-gray-700'>{paramaName} SERVICE OVERVIEW</h3>
 
                 <span className='bodSpan mt-[10px]'></span>
 
@@ -149,6 +149,7 @@ function MainService() {
 
                         <span className='bodSpan mt-[10px]'></span>
 
+                        {paramaName === 'JUNK YOUR CAR' ?
                         <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
                             <div className='Ruga w-full delay-300'>
                                 <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
@@ -204,6 +205,195 @@ function MainService() {
                                 <p className={`text-sm mt-[20px] hidden text-gray-600 ${showThree && "gott"}`}>360 Salvage offers a range of solutions for corporates, including tailored salvage and recycling programs, online auctions, and GDPR-compliant data management processes. We work with a variety of industries, from insurance companies to banks, schools, and government organizations, to provide efficient and sustainable solutions for their vehicle salvage and disposal needs. Contact us to learn more about how we can assist your corporate organization.</p>
                             </div>
                         </div>
+                        :
+                        null
+                        }
+
+
+
+                        {paramaName === 'GARAGE' ?
+                        <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowOne(!showOne)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showOne && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>What types of vehicles do you work on?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showOne && "gott"}`}>At 360 Salvage, our highly qualified mechanics are skilled in working on all types of vehicles, whether you drive a passenger car, SUV, or medium-sized truck.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowTwo(!showTwo)
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showTwo && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>Do you offer any promotions or special offers for mechanical services?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showTwo && "gott"}`}>Yes, we offer a free oil change with any service appointment at 360 Salvage.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowThree(!showThree)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+                                }}>
+                                    <span className={`${showThree && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>What services do you offer to enhance my driving experience?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showThree && "gott"}`}>We offer a professional car audio service to enhance your driving experience, as well as parking sensors calibration to ensure your safety while parking and a car A/C recharge to keep you cool and comfortable during the summer.</p>
+                            </div>
+                        </div>
+                        :
+                        null
+                        }
+
+
+
+                        {paramaName === 'VEHICLE PARTS' ?
+                        <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowOne(!showOne)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showOne && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>How do I find the right part for my vehicle?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showOne && "gott"}`}>At 360 Salvage, we have a vast and diverse database of used auto-parts for all makes and models. Our experienced team can help you identify the exact part you need, making the process quick and hassle-free. Simply provide us with your vehicle's details, and we'll help you find the right component.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowTwo(!showTwo)
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showTwo && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>Do you offer delivery services for the auto-parts?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showTwo && "gott"}`}>Yes, we offer delivery services across South Africa for your convenience. We understand that getting your vehicle up and running as quickly as possible is essential, which is why we offer fast and reliable delivery services to ensure that you receive your auto-parts in a timely manner.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowThree(!showThree)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+                                }}>
+                                    <span className={`${showThree && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>How do I make payments for the auto-parts?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showThree && "gott"}`}>We offer multiple payment options, including cash, EFT, and credit card. We strive to make the payment process as convenient as possible for our customers, so you can choose the option that works best for you.</p>
+                            </div>
+                        </div>
+                        :
+                        null
+                        }
+
+
+
+                        {paramaName === 'WHEELS AND TIRES' ?
+                        <div className='w-full border flex flex-col mt-[30px] p-[20px] gap-[20px]'>
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowOne(!showOne)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showOne && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>Can you deliver my wheels/tyres?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showOne && "gott"}`}>Yes, we offer a delivery service for our wheels and tyres. We understand that it can be inconvenient to transport them yourself, which is why we have partnered with reliable delivery companies to ensure that your order arrives at your doorstep quickly and safely.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowTwo(!showTwo)
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+
+                                    if(showThree === true) {
+                                        setShowThree(false)
+                                    }
+                                }}>
+                                    <span className={`${showTwo && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>How can I find a matching wheel for my vehicle?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showTwo && "gott"}`}>We have a wide range of wheels in stock for various vehicle makes and models. Our team of experts can help you find the right wheel that matches your vehicle's specifications. You can also provide us with your vehicle's make, model and year, and we will assist you in finding the perfect match.</p>
+                            </div>
+
+                            <div className='Ruga w-full delay-300'>
+                                <div className='w-full flex hover:translate-x-[10px] cursor-pointer' onClick={()=>{
+                                    setShowThree(!showThree)
+                                    if(showTwo === true) {
+                                        setShowTwo(false)
+                                    }
+
+                                    if(showOne === true) {
+                                        setShowOne(false)
+                                    }
+                                }}>
+                                    <span className={`${showThree && "rotate-90 mr-2"} mr-2`}><ArrowCircleRightOutlined /></span>
+                                    <h4>Do you provide a tyre fitting service?</h4>
+                                </div>
+
+                                <p className={`text-sm mt-[20px] hidden text-gray-600 ${showThree && "gott"}`}>Yes, we offer a tyre fitting service at our locations. Our team of experienced technicians will ensure that your tyres are installed safely and correctly, and that they are balanced and aligned for optimal performance. We also offer other tyre services, including repairs and replacements, so you can count on us for all your tyre needs.</p>
+                            </div>
+                        </div>
+                        :
+                        null
+                        }
                     </div>
                 </div>
             </div>

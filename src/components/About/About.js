@@ -53,15 +53,8 @@ function About() {
     <section className='max-w-[1240px] mx-auto px-1 py-8 md:px-4 md:py-16 grid sm:grid-cols-1 lg:grid-cols-2' id='about'>
         <div className='AboutOverlayContainer cursor-pointer select_container bg-white px-[10px] py-[30px] md:p-[50px] '>
             <h2>ABOUT US</h2>
-            <p className='reveal mt-[50px]'>360 Salvage is an easy way for car owners to get a great price 
-            for scrapping their car and help keep the environment clean 
-            at the same time. If you’ve got an old or unwanted vehicle, you 
-            may be wondering how to dispose of it effectively whilst still 
-            getting a good price for it.</p>
-            <p className='reveal mt-[40px]'>We operate nationwide and offers car owners great prices for 
-            their old and scrap cars. We ensure that all the cars we collect 
-            are disposed of ethically and in an environmentally friendly 
-            way while the spare parts are professionally refurbished...</p>
+            <p className='reveal mt-[50px]'>Welcome to 360 Salvage, your one-stop-shop for high-quality and affordable salvage and used auto-parts solutions in South Africa. With multiple locations across the country, we offer comprehensive services that cater to a wide range of needs, delivered fast, simply, and hassle-free.</p>
+            <p className='reveal mt-[40px]'>Our team of experts offers fast and efficient services that prioritize our customers, guiding them through the process and answering any questions they may have. From salvaging total loss vehicles to providing quality used parts, we make the process as smooth and stress-free as possible.Discover how our customer experience can help you find the right solution for your specific needs at competitive pricing.</p>
 
             <div className='reveal2 AboutContainerChild mt-10'>
                 <span></span>

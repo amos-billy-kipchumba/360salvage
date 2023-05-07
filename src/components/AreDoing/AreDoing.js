@@ -62,7 +62,7 @@ function AreDoing() {
                     <h1 className='text-white mt-[50px]'>Our Sustainability
                     Pledge</h1>
 
-                    <h4 className='text-white mt-[50px]'>As a responsible member of the community, 360 Salvage is committed to promoting sustainability and minimizing our environmental impact. We pledge to incorporate sustainable practices into all aspects of our operations, from salvage and recycling to daily business practices. Our commitment includes reducing waste, conserving energy, and minimizing pollution. We are dedicated to creating a greener future for our community and planet.</h4>
+                    <h4 className='text-white mt-[50px]'>Sustainability is more than just a buzzword here at 360 Salvage – it's a way of doing business. We understand the impact of the automotive industry on the environment and are committed to promoting a greener future for our planet and communities. We achieve this by incorporating sustainable practices into every aspect of our operations, from responsible salvaging and recycling of vehicles to reducing waste, conserving energy, and minimising pollution in our daily practices. Our inventory of high-quality, used vehicle parts not only helps reduce CO2 emissions but also supports the circular economy. We continuously strive to innovate and prioritise energy efficiency, waste reduction, and responsible recycling, making eco-friendly alternatives readily available to our customers. With our commitment to sustainability, we aim to create a lasting impact that benefits both our customers and the planet.</h4>
 
                     <div className='flex mt-[50px] mb-[50px] gap-[20px]'>
                         <div className='flex flex-1 flex-col justify-end'>
