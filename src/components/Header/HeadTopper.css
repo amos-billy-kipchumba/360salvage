@@ -19,3 +19,7 @@
 .transMar {
     transition: all 0.3s ease-in-out;
 }
+
+.red-redy {
+    background-color: #F0553F;
+}
