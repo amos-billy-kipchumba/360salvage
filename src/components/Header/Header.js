@@ -2,7 +2,7 @@ import { Close, Facebook, Instagram, LinkedIn, Menu, Twitter, WhatsApp } from '@
 import React, {useState, useEffect} from 'react'
 import './Header.css'
 import {useNavigate} from 'react-router-dom'
-import Pipa from '../Assets/logo/DNR-360_SALVAGE_LOGO-05-removebg-preview.png'
+import Pipa from '../Assets/logo/360 SALVAGE-2023-21 (1).png'
 import HeadTopper from './HeadTopper'
 import HeadBottomer from './HeadBottomer'
 function Header() {

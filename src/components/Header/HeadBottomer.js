@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function HeadBottomer() {
   const Navigate = useNavigate() 
   return (
-    <div className='hidden md:flex align-middle bg-red-500 w-full justify-end py-2'>
+    <div className='red-redy hidden md:flex align-middle w-full justify-end py-2'>
         <div className='Bottomer md:px-6 xl:px-20 flex text-white cursor-pointer ease-in-out' onClick={()=>{
           Navigate(`/service?name=JUNK YOUR CAR`)
         }}>SELL YOUR CAR</div>
