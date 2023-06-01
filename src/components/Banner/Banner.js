@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from 'react'
 import './Banner.css'
-import Vid from '../Assets/banner/lots-of-car-tires-in-a-backyard-starting-a-small-b-2023-02-28-19-43-10-utc.mp4'
+import Vid from '../Assets/banner/Destruction Manenos (online-video-cutter.com).mp4'
 import SlideData from './SliderData';
 function Banner() {
 
