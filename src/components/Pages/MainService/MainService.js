@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './MainService.css'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { ArrowCircleRightOutlined, ArrowRight } from '@mui/icons-material';
-import FirstVid from '../../Assets/banner/lots-of-car-tires-in-a-backyard-starting-a-small-b-2023-02-28-19-43-10-utc.mp4'
+import FirstVid from '../../Assets/banner/Destruction Manenos (online-video-cutter.com).mp4'
 function MainService() {
     const [searchParams] = useSearchParams();
 
