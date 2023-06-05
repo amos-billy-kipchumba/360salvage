@@ -3,6 +3,9 @@ import './MainService.css'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { ArrowCircleRightOutlined, ArrowRight } from '@mui/icons-material';
 import FirstVid from '../../Assets/banner/Destruction Manenos (online-video-cutter.com).mp4'
+import SecondVid from '../../Assets/banner/garage.mp4'
+import ThirdVid from '../../Assets/banner/wheels.mp4'
+import FourthVid from '../../Assets/banner/parts.mp4'
 function MainService() {
     const [searchParams] = useSearchParams();
 
@@ -14,7 +17,7 @@ function MainService() {
     
     const paramaName = searchParams.get('name');
 
-    const Navigate = useNavigate()
+    const Navigate = useNavigate();
 
     //Scroll to the top on load-
     useEffect(()=>{
@@ -84,6 +87,7 @@ function MainService() {
             <div className='flex flex-col flex-1'>
                 <div className='w-full flex gap-[20px]'>
                     <div className='flex flex-1 h-[20vh] lg:h-[25vh] xl:h-[40vh]'>
+                    {paramaName === 'JUNK YOUR CAR' ?
                     <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
                             <source
                             src={FirstVid}
@@ -91,6 +95,46 @@ function MainService() {
                             />
                             Your browser does not support the video tag.
                     </video>
+                        :
+                    null
+                    }
+
+                    {paramaName === 'GARAGE' ?
+                    <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
+                            <source
+                            src={SecondVid}
+                            type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                    </video>
+                        :
+                    null
+                    }
+
+                    {paramaName === 'VEHICLE PARTS' ?
+                    <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
+                            <source
+                            src={FourthVid}
+                            type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                    </video>
+                        :
+                    null
+                    }
+
+                    {paramaName === 'WHEELS AND TIRES' ?
+                    <video loop autoPlay muted className='min-h-full min-w-full object-cover'>
+                            <source
+                            src={ThirdVid}
+                            type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                    </video>
+                        :
+                    null
+                    }
+                    
                     </div>
                 </div>
 

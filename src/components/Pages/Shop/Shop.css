@@ -2,6 +2,7 @@
     box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
     transition: transform 300ms ease-in;
     cursor: pointer;
+    background-color: rgb(42,73,76);
 }
 
 .scf:hover {
@@ -29,4 +30,21 @@
     transition: all 0.3s ease-in-out;
     background-color: rgb(42,73,76);
     color: white;
+}
+
+.tutus {
+    color: rgb(199, 201, 204);
+}
+
+.tuliv {
+    color: rgb(199, 201, 204);
+    transition: all 0.3s ease-in-out;
+}
+
+.tuliv:hover {
+    color: #F0553F;
+}
+
+.gond {
+    background-color: rgb(1,2,6);
 }

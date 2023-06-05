@@ -59,14 +59,14 @@ function LetGo() {
         <div className='min-h-[50vh] flex-1 overflow-hidden relative'>
             <div className='LetGo w-full min-h-full relative top-0 left-0 flex flex-col px-[10px] md:px-[100px]'>
                 <img src={Greener} alt='' className='absolute bottom-0 rotate-180 w-[70%]' />
-                <h2 className='reveal text-white font-bold text-5xl mt-[50px]'>Have you been thinking 
+                <h2 className='text-white font-bold text-5xl mt-[50px]'>Have you been thinking 
                 of letting go your 
                 old car?</h2>
                 <h4 className='mt-[50px] text-white'>Kindly enter your email for a quotation and we’ll get in touch 
                 ASAP! You’ll also get updates on our auction dates and used 
                 parts available in our inventory!</h4>
 
-                <div className='reveal2 flex w-[98%] md:w-[500px] border border-white mt-[50px] mb-[50px]'>
+                <div className='flex w-[98%] md:w-[500px] border border-white mt-[50px] mb-[50px]'>
                     <div className='flex flex-grow bg-transparent'>
                         <input type='email' placeholder='Please enter email here' className='bg-transparent outline-none w-full h-full p-2' />
                     </div>

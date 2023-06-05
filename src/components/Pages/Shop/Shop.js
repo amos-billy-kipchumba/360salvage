@@ -34,12 +34,12 @@ function Shop() {
         </div>
 
 
-        <div className='troto flex flex-col-reverse xl:flex-row bg-white w-[98%] xl:w-[60%] mx-auto mt-[50px] lg:justify-between'>
+        <div className='troto flex flex-col-reverse xl:flex-row w-[98%] xl:w-[60%] mx-auto mt-[50px] lg:justify-between'>
             <div className='flex flex-col flex-grow lg:mr-4'>
-              <p className='mx-auto my-2'>Filter by</p>
+              <p className='tutus mx-auto my-2'>Filter by</p>
               <div className='flex flex-col w-full mb-[30px] lg:mb-auto'>
                 <div className='w-full flex flex-col'>
-                    <div className={`scf ${clk1 && 'thg'} w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out hover:text-white`} onClick={()=>{
+                    <div className={`scf ${clk1 && 'thg'} tuliv w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                       setClk1(!clk1)
                       if(clk2 === true) {
                         setClk2(false)
@@ -58,7 +58,7 @@ function Shop() {
                        :
                        null
                     }
-                    <div className={`scf ${clk2 && 'thg'} w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out hover:text-white`} onClick={()=>{
+                    <div className={`scf ${clk2 && 'thg'} tuliv w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                       setClk2(!clk2)
 
                       if(clk1 === true) {
@@ -78,7 +78,7 @@ function Shop() {
                        :
                        null
                     }
-                    <div className={`scf ${clk3 && 'thg'} w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out hover:text-white`} onClick={()=>{
+                    <div className={`scf ${clk3 && 'thg'} tuliv w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                       setClk3(!clk3)
                       if(clk2 === true) {
                         setClk2(false)
@@ -97,7 +97,7 @@ function Shop() {
                        :
                        null
                     }
-                    <div className={`scf ${clk4 && 'thg'} w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out hover:text-white`} onClick={()=>{
+                    <div className={`scf ${clk4 && 'thg'} tuliv w-full p-4 text-xs flex justify-between align-middle cursor-pointer ease-out`} onClick={()=>{
                       setClk4(!clk4)
                       if(clk2 === true) {
                         setClk2(false)
@@ -119,7 +119,7 @@ function Shop() {
                 </div>
               </div>
             </div>
-            <div className='w-[98%] lg:w-[60%] h-[50vh] lg:h-[50vh] mx-auto lg:mx-0 flex flex-col justify-center align-middle'><Slider3 item={FeaturedData} /></div>
+            <div className='gond w-[98%] lg:w-[60%] h-[50vh] lg:h-[50vh] mx-auto lg:mx-0 flex flex-col justify-center align-middle'><Slider3 item={FeaturedData} /></div>
         </div>
 
         <FeaturedProducts item={FeaturedData} price={content1} />

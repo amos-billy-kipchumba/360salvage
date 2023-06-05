@@ -59,7 +59,7 @@ function About() {
             <div className='reveal2 AboutContainerChild mt-10'>
                 <span></span>
 
-                <span>MEET THE TEAM</span>
+                <span>FIND OUT MORE</span>
             </div>
         </div>
 
