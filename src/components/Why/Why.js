@@ -72,6 +72,8 @@ function Why() {
                         <p className='text-white'><strong>Comprehensive Solutions:</strong> We offer a wide range of services, from salvage and recycling to repairs and maintenance. This means you can get everything you need under one roof, saving you time, money, and hassle.</p>
                     </div>
 
+                    <img src={LeftImg} alt='' className='h-[200px] mx-auto my-[50px] object-cover' />
+
                     <div className='w-full min-h-[40vh] lg:min-h-[50vh] flex p-[50px] bg-gray-600/10'>
                         <p className='text-white'><strong>Nationwide Coverage:</strong> With our nationwide coverage, we make it easy for you to access our services no matter where you are in the country or how big or small your project is.</p>
                     </div>
@@ -82,6 +84,9 @@ function Why() {
                         <p className='text-white'><strong>Competitive Pricing:</strong> We offer competitive pricing for all our services, ensuring that you get the best value for your money. Our pricing is transparent, and we always work with you to find the most cost-effective solutions for your needs.</p>
                     </div>
 
+                    <img src={CenterImg} alt='' className='h-[200px] mx-auto my-[50px]' />
+
+                    
                     <div className='w-full min-h-[40vh] lg:min-h-[50vh] flex p-[50px] bg-gray-600/10'>
                         <p className='text-white'><strong>Expert Team:</strong> Our team is made up of experienced and knowledgeable professionals who are passionate about what they do. They are committed to providing you with top-notch services and support, helping you find the best solutions for your unique needs.</p>
                     </div>

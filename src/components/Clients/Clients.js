@@ -1,20 +1,32 @@
 import React from 'react'
 import './Clients.css'
-import CountUp from "react-countup";
+import First from "./logos/3m.svg"
+import Second from "./logos/barstool-store.svg"
+import Third from "./logos/budweiser.svg"
+import Fourth from "./logos/buzzfeed.svg"
+import Fifth from "./logos/forbes.svg"
+import Sixth from "./logos/macys.svg"
+import Seventh from "./logos/menshealth.svg"
+import Eight from "./logos/mrbeast.svg"
 function Clients() {
+  
   return (
     <div className='w-full flex flex-col'>
         <div className='flex align-middle min-h-[30vh]'> 
             <h3 className='my-auto ml-[100px]'>OUR CLIENTS AND PARTNERS</h3>
         </div>
 
-        <div className='min-h-[30vh] flex bg-gray-400/60 px-[10px] xl:px-[100px]'>
-          <div className='mx-auto px-4 py-16 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 w-full gap-[5%] mb-8 md:mb-0 min-h-[30vh]'>
-            <div className='Besty w-full h-[20vh] flex align-middle border-emerald-500 border p-4 relative overflow-hidden'>
-              <h2 className='m-auto'>Over <CountUp start={0} end={30} duration={2} suffix="" /> clients</h2>
-            </div>
-            <div className='Besty1 w-full h-[20vh] flex align-middle bg-red-700 p-4 border border-red-700 relative overflow-hidden'>
-              <h2 className='m-auto text-white'>Partnered with <CountUp start={0} end={15} duration={2} suffix="" /> companies</h2>
+        <div className='redty min-h-[30vh] flex px-[10px] xl:px-[100px] relative overflow-hidden'>
+          <div class="logos">
+            <div class="logos-slide">
+              <img src={First} alt="" />
+              <img src={Second} alt="" />
+              <img src={Third} alt="" />
+              <img src={Fourth} alt="" />
+              <img src={Fifth} alt="" />
+              <img src={Sixth} alt="" />
+              <img src={Seventh} alt="" />
+              <img src={Eight} alt="" />
             </div>
           </div>
         </div>

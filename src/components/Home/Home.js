@@ -4,7 +4,6 @@ import './Home.css'
 import About from '../About/About';
 import WeDo from '../WeDo/WeDo';
 import HowItWork from '../HowItWorks/HowItWork';
-import LetGo from '../LetGo/LetGo';
 import Faq from '../FAQ/Faq';
 import Clients from '../Clients/Clients';
 import Why from '../Why/Why';
@@ -22,7 +21,6 @@ function Home() {
         <Why />
         <WeDo />
         <HowItWork />
-        <LetGo />
         <Clients />
         <AreDoing />
         <Faq />

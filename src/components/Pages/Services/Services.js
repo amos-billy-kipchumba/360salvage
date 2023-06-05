@@ -25,7 +25,7 @@ function Services() {
               }}>
                   <span className='mr-2 text-gray-600'>For better, for cars</span>
               </h5>
-          </div> 
+          </div>
       </div>
 
 

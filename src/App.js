@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -18,10 +18,13 @@ import AntiSlaveryStatement from './components/Pages/AntiSlaveryStatement/AntiSl
 import CookingSettings from './components/Pages/CookieSettings/CookingSettings';
 import Contact from './components/Pages/Contact/Contact';
 import LearnMore from './components/Pages/LearnMore/LearnMore';
+// import LetGo from './components/LetGo/LetGo'
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
+  const [showFilter, setShowFilter] = useState(false);
     useEffect(()=>{
+      
         let lastScrollY = window.pageYOffset;
 
         const updateScrollDirection = () => {
@@ -45,6 +48,31 @@ function App() {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     },[]);
     //End of Scroll to the top on load
+
+    //  Overlay ref
+        let overlayRef = useRef();
+        useEffect(()=>{
+            let handler = (e) => {
+                if(showFilter !== false){
+                    if(!overlayRef?.current?.contains(e.target)) {
+                        setShowFilter(!showFilter);
+                    }
+                }
+            };
+
+            document.addEventListener("mousedown", handler);
+
+            return() => {
+                document.removeEventListener("mousedown", handler);
+            }
+        },[showFilter]);
+    // end
+
+    useEffect(() => {
+      setTimeout(() => {
+        setShowFilter(!showFilter);
+      }, 60000);
+    }, [showFilter]);
   return (
     <BrowserRouter>
       <div className="App overflow-hidden flex flex-col w-full">
@@ -104,6 +132,17 @@ function App() {
             Lets chat
           </a>
         </h2>
+
+        {/*
+        {showFilter !== false ?
+        <div className="aboveAll">
+          <LetGo ref={overlayRef} />
+        </div>
+        :
+        null
+        }
+       */}
+      
       </div>
     </BrowserRouter>
   );
