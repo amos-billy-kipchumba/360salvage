@@ -29,10 +29,10 @@ function Services() {
       </div>
 
 
-      <div className='bg-white mx-auto px-4 xl:px-[100px] py-[50px] flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[0%]'>
-        <div className='flex flex-col min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
+      <div className='glog mx-auto px-4 xl:px-[100px] pb-[20px] pt-[50px] flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[20px]'>
+        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
             <img src={FirstImg} alt="" className='imgeryy w-full h-full object-cover' />
-            <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
+            <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=JUNK YOUR CAR`)
             }}>
               <h3 className='text-gray-600'>JUNK YOUR CAR</h3>
@@ -40,9 +40,9 @@ function Services() {
             </div>
         </div>
 
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
+        <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
           <img src={SecondImg} alt="" className='imgeryy w-full h-full object-cover' />
-          <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
+          <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=GARAGE`)
           }}>
             <h3 className='text-gray-600'>GARAGE</h3>
@@ -50,9 +50,13 @@ function Services() {
           </div>
         </div>
 
-        <div className='flex flex-col flex-1 min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
+        
+      </div>
+
+      <div className='mx-auto bg-white px-4 xl:px-[100px] pb-[50px] pt-0 flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[20px]'>
+          <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
           <img src={ThirdImg} alt="" className='imgeryy w-full h-full object-cover' />
-          <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
+          <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=VEHICLE PARTS`)
           }}>
             <h3 className='text-gray-600'>VEHICLE PARTS</h3>
@@ -61,9 +65,9 @@ function Services() {
         </div>
 
 
-        <div className='flex flex-col min-w-[90%] md:min-w-[48%] lg:max-w-[48%] xl:mt-[0px]'>
-            <img src={FourthImg} alt="" className='imgeryy w-full h-full object-cover' />
-            <div className='w-full p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
+        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-black'>
+            <img src={FourthImg} alt="" className='imgeryy w-full h-full object-fill' />
+            <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=WHEELS AND TIRES`)
             }}>
               <h3 className='text-gray-600'>WHEELS AND TIRES</h3>
@@ -71,6 +75,7 @@ function Services() {
             </div>
         </div>
       </div>
+      
     </div>
   )
 }

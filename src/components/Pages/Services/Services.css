@@ -1,13 +1,48 @@
 .imgeryy:hover {
-    -webkit-filter: brightness(80%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    cursor: pointer;
+    
 }
 
 .colRo {
     color: rgb(106,185,78);
+}
+
+.glog {
+    background: linear-gradient(rgb(59,102,92), rgb(59,102,92) 50%, #fff 50%, #fff 100%);
+}
+
+.glogy {
+    position: relative;
+}
+
+.glogy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,38,54, .5);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.glogy:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.yutr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+}
+
+.glogy:hover > div {
+    opacity: 1;
 }

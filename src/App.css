@@ -15,8 +15,8 @@
   position: fixed;
   bottom: 200px;
   right: 0;
-  background-color: rgb(216,56,48);
-  border: 1px solid rgb(216,56,48);
+  background-color: rgb(240,85,63);
+  border: 1px solid rgb(240,85,63);
   color: #ffff;
   padding: 20px 5px;
   writing-mode: vertical-lr;
@@ -29,7 +29,7 @@
 
 .magicBut:hover {
   background-color: white;
-  color: rgb(216,56,48);
+  color: rgb(240,85,63);
 }
 
 .hide_banner {

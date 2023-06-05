@@ -56,7 +56,7 @@ function AreDoing() {
     <div className='w-full min-h-[140vh] flex flex-col'>
         <div className='min-h-[70vh] w-full flex flex-col justify-end'>
             <div className='flex flex-col md:flex md:flex-row w-[98%] md:w-[80%] mx-auto min-h-[40vh] translate-y-[200px]'>
-                <div className='reveal p-[50px] bg-red-600 flex-1'>
+                <div className='reveal gtot p-[50px] flex-1'>
                     <h3 className='text-white'>WHAT WE ARE DOING</h3>
 
                     <h1 className='text-white mt-[50px]'>Our Sustainability

@@ -47,3 +47,7 @@
     transition: 0.3s ease-in;
     cursor: pointer;
 }
+
+.gtot {
+    background-color: rgb(240,85,63);
+}

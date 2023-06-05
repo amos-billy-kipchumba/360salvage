@@ -56,3 +56,9 @@
 .transssa {
     transition: 0.3s ease-in-out;
 }
+
+
+.gto:hover {
+    background-color: rgb(240,85,63);
+    transition: all 0.3s ease-in-out;
+}

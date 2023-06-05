@@ -60,7 +60,7 @@ function Faq() {
         <div className='w-[85%] mx-auto min-h-[50vh]  flex flex-col md:flex-row md:flex-wrap gap-x-[5%] gap-y-[30px]  mt-[40px] md:mt-[100px]'>
             <div className='reveal2 min-h-[50vh] w-[98%] md:w-[45%] xl:w-[30%] overflow-hidden relative'>
                 
-                <div className='transssa bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:bg-red-500/90 hover:text-white'>
+                <div className='transssa gto bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:text-white'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2 className='mt-[50px]'>How do you 
                     scrap your car
@@ -78,7 +78,7 @@ function Faq() {
 
             <div className='reveal2 min-h-[50vh] w-[98%] md:w-[45%] xl:w-[30%] overflow-hidden relative'>
                 
-                <div className='transssa bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:bg-red-500/90 hover:text-white'>
+                <div className='transssa gto bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:text-white'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2 className='mt-[50px]'>What type of cars does 360 Salvage take?</h2>
                     <h4 className='mt-[50px] text-green-500' onClick={()=>{
@@ -92,7 +92,7 @@ function Faq() {
             </div>
 
             <div className='reveal2 min-h-[50vh] w-[98%] md:w-[45%] xl:w-[30%] overflow-hidden relative'>
-                <div className='transssa bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:bg-red-500/90 hover:text-white'>
+                <div className='transssa gto bg-white/90 w-full min-h-full relative top-0 left-0 flex flex-col p-[50px] hover:text-white'>
                     <img src={Green} alt='' className='absolute right-0 top-0 w-[50px]' />
                     <h2 className='mt-[50px] w-[250px]'>What solutions do we have for corporations?</h2>
 
