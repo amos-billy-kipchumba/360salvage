@@ -73,11 +73,19 @@ function About() {
 
                 <span className='w-[100px] flex flex-col text-green-500 RelSy mt-[10px]'></span>
 
-                <p className='flex align-middle mt-[20px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Transparency: We believe in operating with honesty and integrity, and always providing our customers with clear and transparent information about our services and pricing.</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Customer Satisfaction: We strive to provide the highest level of customer service and support, ensuring that our clients have a positive and seamless experience with us.</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Expertise: Our team of salvage experts are highly skilled and knowledgeable, with years of experience in the industry. We take pride in offering top-tier advice and guidance to our customers.</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Innovation: We are dedicated to staying at the forefront of the salvage industry by constantly exploring new and innovative solutions to improve our services and processes.</p>
-                <p className='flex align-middle mt-[5px]'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Sustainability: We are committed to minimising our environmental impact by utilising the latest eco-friendly technologies and best practices.</p>
+                <div className='flex md:flex-row flex-col gap-4'>
+                    <p className='flex flex-1 align-middle mt-[20px] bg-white shadow-md px-1 py-4 hover:scale-105 transition duration-500'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Transparency: We believe in operating with honesty and integrity, and always providing our customers with clear and transparent information about our services and pricing.</p>
+                    <p className='flex flex-1 align-middle mt-[5px] bg-white shadow-md px-1 py-4 hover:scale-105 transition duration-500'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Customer Satisfaction: We strive to provide the highest level of customer service and support, ensuring that our clients have a positive and seamless experience with us.</p>
+                </div>
+
+                <div className='flex md:flex-row flex-col gap-4'>
+                    <p className='flex flex-1 align-middle mt-[5px] bg-white shadow-md px-1 py-4 hover:scale-105 transition duration-500'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Expertise: Our team of salvage experts are highly skilled and knowledgeable, with years of experience in the industry. We take pride in offering top-tier advice and guidance to our customers.</p>
+                    <p className='flex flex-1 align-middle mt-[5px] bg-white shadow-md px-1 py-4 hover:scale-105 transition duration-500'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Innovation: We are dedicated to staying at the forefront of the salvage industry by constantly exploring new and innovative solutions to improve our services and processes.</p>
+                </div>
+
+                <div className='flex'>
+                    <p className='flex align-middle mt-[5px] bg-white shadow-md px-1 py-4 hover:scale-105 transition duration-500'><span className='text-green-500 my-auto mr-[5px]'><CheckOutlined /></span>Sustainability: We are committed to minimising our environmental impact by utilising the latest eco-friendly technologies and best practices.</p>
+                </div>
             </div>
         </div>
 

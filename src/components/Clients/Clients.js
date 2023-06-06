@@ -1,15 +1,15 @@
 import React from 'react'
 import './Clients.css'
-import First from "./logos/3m.svg"
-import Second from "./logos/barstool-store.svg"
-import Third from "./logos/budweiser.svg"
-import Fourth from "./logos/buzzfeed.svg"
-import Fifth from "./logos/forbes.svg"
-import Sixth from "./logos/macys.svg"
-import Seventh from "./logos/menshealth.svg"
-import Eight from "./logos/mrbeast.svg"
+import First from "../Assets/CAR BRANDS/HONDA.png"
+import Second from "../Assets/CAR BRANDS/Toyota-logo.jpg"
+import Third from "../Assets/CAR BRANDS/audi.jpg"
+import Fourth from "../Assets/CAR BRANDS/ford.jpg"
+import Fifth from "../Assets/CAR BRANDS/mazda.jpg"
+import Sixth from "../Assets/CAR BRANDS/mercedes.png"
+import Seventh from "../Assets/CAR BRANDS/mitsubishi.png"
+import Eight from "../Assets/CAR BRANDS/tata.png"
 function Clients() {
-  
+ 
   return (
     <div className='w-full flex flex-col'>
         <div className='flex align-middle min-h-[30vh]'> 
