@@ -30,7 +30,7 @@ function Services() {
 
 
       <div className='glog mx-auto px-4 xl:px-[100px] pb-[20px] pt-[50px] flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[20px]'>
-        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
+        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-white shadow-md hover:scale-105 transition duration-500'>
             <img src={FirstImg} alt="" className='imgeryy w-full h-full object-cover' />
             <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=JUNK YOUR CAR`)
@@ -40,7 +40,7 @@ function Services() {
             </div>
         </div>
 
-        <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
+        <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-white shadow-md hover:scale-105 transition duration-500'>
           <img src={SecondImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=GARAGE`)
@@ -54,7 +54,7 @@ function Services() {
       </div>
 
       <div className='mx-auto bg-white px-4 xl:px-[100px] pb-[50px] pt-0 flex w-full flex-col md:flex-row justify-between lg:justify-center md:flex-wrap gap-[20px] xl:gap-[20px]'>
-          <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden'>
+          <div className='glogy flex flex-col flex-1 min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-white shadow-md hover:scale-105 transition duration-500'>
           <img src={ThirdImg} alt="" className='imgeryy w-full h-full object-cover' />
           <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
             Navigate(`/service?name=VEHICLE PARTS`)
@@ -65,7 +65,7 @@ function Services() {
         </div>
 
 
-        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-black'>
+        <div className='glogy flex flex-col min-w-[90%] md:min-w-[30%] lg:max-w-[30%] xl:mt-[0px] h-[40vh] rounded-md overflow-hidden bg-white shadow-md hover:scale-105 transition duration-500'>
             <img src={FourthImg} alt="" className='imgeryy w-full h-full object-fill' />
             <div className='yutr p-4 flex justify-between bg-gray-100 cursor-pointer transition-all 300s ease-out' onClick={()=>{
               Navigate(`/service?name=WHEELS AND TIRES`)
