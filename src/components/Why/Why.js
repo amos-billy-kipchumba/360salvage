@@ -4,7 +4,9 @@ import WhyImg from '../Assets/Slides/Vehicle Salvaged.png'
 import LeftImg from '../Assets/about/WHY CHOOSE US-17.png'
 import CenterImg from '../Assets/about/WHY CHOOSE US-18.png'
 import RightImg from '../Assets/about/WHY CHOOSE US-19.png'
+import NationIde from '../Assets/about/nation_wide-removebg-preview.png'
 import Green from "../Assets/about/360 Footer Halftone-07-16.png"
+import Environment from "../Assets/about/env-removebg-preview.png"
 function Why() {
     useEffect(()=>{
         window.addEventListener('scroll', reveal);
@@ -72,14 +74,14 @@ function Why() {
                         <p className='text-white'><strong>Comprehensive Solutions:</strong> We offer a wide range of services, from salvage and recycling to repairs and maintenance. This means you can get everything you need under one roof, saving you time, money, and hassle.</p>
                     </div>
 
-                    <img src={LeftImg} alt='' className='h-[200px] mx-auto my-[50px] object-cover' />
+                    <img src={Environment} alt='' className='h-[200px] mx-auto my-[50px] object-cover' />
 
                     <div className='w-full min-h-[40vh] lg:min-h-[50vh] flex p-[50px] bg-gray-600/10'>
                         <p className='text-white'><strong>Environmental Sustainability:</strong> At 360 Salvage, we prioritise environmental sustainability in all aspects of our operations by using sustainable and ethical practices. Our commitment includes proper recycling of all collected vehicles and refurbishing spare parts with the utmost professionalism.</p>
                     </div>
                 </div>
                 <div className='flex flex-col flex-1 bdWhy'>
-                    <img src={CenterImg} alt='' className='h-[200px] mx-auto my-[50px]' />
+                    <img src={NationIde} alt='' className='h-[200px] mx-auto my-[50px]' />
                     <div className='w-full min-h-[40vh] lg:min-h-[50vh] flex p-[50px] bg-gray-600/10'>
                         <p className='text-white'><strong>Nationwide Coverage:</strong> With our nationwide coverage, we make it easy for you to access our services no matter where you are in the country or how big or small your project is.</p>
                     </div>

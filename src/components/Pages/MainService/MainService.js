@@ -149,23 +149,23 @@ function MainService() {
                 <form className='xds flex flex-col w-full mt-8 p-4 lg:p-8'>
                     <h4 className='mb-2'>Person Info</h4>
                     <div className='flex flex-col lg:flex-row gap-4 w-full border p-4'>
-                        <input type='text' placeholder='Your name' className='flex flex-1 outline-none border p-2' />
-                        <input type='phone' placeholder='Your phone' className='flex flex-1 outline-none border p-2' />
-                        <input type='email' placeholder='Your email' className='flex flex-1 outline-none border p-2' />
+                        <input type='text' placeholder='Your name' className='shadow-inner flex flex-1 outline-none p-2' />
+                        <input type='phone' placeholder='Your phone' className='shadow-inner flex flex-1 outline-none p-2' />
+                        <input type='email' placeholder='Your email' className='shadow-inner flex flex-1 outline-none p-2' />
                     </div>
 
                     <h4 className='mb-2 mt-2'>Vehicle Info</h4>
 
                     <div className='flex flex-col border'>
                         <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
-                            <input type='text' placeholder='Make' className='flex flex-1 outline-none border p-2' />
-                            <input type='text' placeholder='Model' className='flex flex-1 outline-none border p-2' />
-                            <input type='text' placeholder='Year' className='flex flex-1 outline-none border p-2' />
+                            <input type='text' placeholder='Make' className='shadow-inner flex flex-1 outline-none p-2' />
+                            <input type='text' placeholder='Model' className='shadow-inner flex flex-1 outline-none p-2' />
+                            <input type='text' placeholder='Year' className='shadow-inner flex flex-1 outline-none p-2' />
                         </div>
 
                         <div className='flex flex-col lg:flex-row gap-4 w-full p-4'>
-                            <input type='text' placeholder='Location' className='flex flex-1 outline-none border p-2' />
-                            <select className='border p-2 flex-1'>
+                            <input type='text' placeholder='Location' className='shadow-inner flex flex-1 outline-none p-2' />
+                            <select className='shadow-inner p-2 flex-1'>
                                 <option>--Select service option--</option>
                                 <option>Repairs</option>
                                 <option>Towing service</option>
@@ -174,7 +174,7 @@ function MainService() {
                             </select>
                         </div>
 
-                        <textarea placeholder='Describe condition of your car' className='flex flex-1 outline-none border p-2 mx-4 min-h-[30vh]'></textarea>
+                        <textarea placeholder='Describe condition of your car' className='flex flex-1 outline-none shadow-inner p-2 mx-4 min-h-[30vh]'></textarea>
 
 
                         <div className='flex flex-col gap-2 w-full p-4'>

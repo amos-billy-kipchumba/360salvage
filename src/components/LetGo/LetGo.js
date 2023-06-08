@@ -3,7 +3,8 @@ import './LetGo.css'
 import AboutImg from '../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car.png'
 
 import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
-function LetGo() {
+import { Close } from '@mui/icons-material'
+function LetGo({onClicky}) {
     useEffect(()=>{
         window.addEventListener('scroll', reveal);
   
@@ -58,6 +59,7 @@ function LetGo() {
         </div>
         <div className='min-h-[50vh] flex-1 overflow-hidden relative'>
             <div className='LetGo w-full min-h-full relative top-0 left-0 flex flex-col px-[10px] md:px-[100px]'>
+                <button className='absolute top-[5px] right-[5px] bg-red-400 text-white p-4 rounded-md' onClick={onClicky}><Close /></button>
                 <img src={Greener} alt='' className='absolute bottom-0 rotate-180 w-[70%]' />
                 <h2 className='text-white font-bold text-5xl mt-[50px]'>Have you been thinking 
                 of letting go your 

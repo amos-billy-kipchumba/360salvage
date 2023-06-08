@@ -7,7 +7,7 @@
 }
 
 .glog {
-    background: linear-gradient(rgb(59,102,92), rgb(59,102,92) 50%, #fff 50%, #fff 100%);
+    background-color: white;
 }
 
 .glogy {
@@ -32,6 +32,8 @@
     transform-origin: bottom;
     transition: transform 0.5s;
 }
+
+
 
 .yutr {
     position: absolute;
