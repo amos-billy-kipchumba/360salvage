@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -18,7 +18,7 @@ import AntiSlaveryStatement from './components/Pages/AntiSlaveryStatement/AntiSl
 import CookingSettings from './components/Pages/CookieSettings/CookingSettings';
 import Contact from './components/Pages/Contact/Contact';
 import LearnMore from './components/Pages/LearnMore/LearnMore';
-// import LetGo from './components/LetGo/LetGo'
+import LetGo from './components/LetGo/LetGo'
 // 
 function App() {
   const [scrollDirection, setScrollDirection] = useState(null);
@@ -49,30 +49,16 @@ function App() {
     },[]);
     //End of Scroll to the top on load
 
-    //  Overlay ref
-        let overlayRef = useRef();
-        useEffect(()=>{
-            let handler = (e) => {
-                if(showFilter !== false){
-                    if(!overlayRef?.current?.contains(e.target)) {
-                        setShowFilter(!showFilter);
-                    }
-                }
-            };
 
-            document.addEventListener("mousedown", handler);
+    window.onload = function() {
+      setTimeout(function(){
+        setShowFilter(true)
+      }, 30000)
+    }
 
-            return() => {
-                document.removeEventListener("mousedown", handler);
-            }
-        },[showFilter]);
-    // end
-
-    useEffect(() => {
-      setTimeout(() => {
-        setShowFilter(!showFilter);
-      }, 60000);
-    }, [showFilter]);
+    const onClicky = () => {
+      setShowFilter(false);
+    }
   return (
     <BrowserRouter>
       <div className="App overflow-hidden flex flex-col w-full">
@@ -133,15 +119,14 @@ function App() {
           </a>
         </h2>
 
-        {/*
-        {showFilter !== false ?
-        <div className="aboveAll">
-          <LetGo ref={overlayRef} />
-        </div>
-        :
+        {showFilter === false ?
         null
+        :
+        <div className="aboveAll">
+          <LetGo onClicky={onClicky} />
+        </div>
         }
-       */}
+
       
       </div>
     </BrowserRouter>
