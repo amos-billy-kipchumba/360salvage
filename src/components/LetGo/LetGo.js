@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './LetGo.css'
-import AboutImg from '../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car.png'
+import AboutImg from '../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car-min.jpg'
 
 import Greener from "../Assets/about/360 Footer Halftone-07-16.png"
 import { Close } from '@mui/icons-material'
@@ -70,10 +70,10 @@ function LetGo({onClicky}) {
 
                 <div className='flex w-[98%] md:w-[500px] border border-white mt-[50px] mb-[50px]'>
                     <div className='flex flex-grow bg-transparent'>
-                        <input type='email' placeholder='Please enter email here' className='bg-transparent outline-none w-full h-full p-2' />
+                        <input type='email' placeholder='Please enter email here' className='bg-transparent outline-none w-full h-full p-2 text-white' />
                     </div>
                     <div className='w-[200px] bg-white text-gray-800 flex align-middle justify-center'>
-                        <h3 className='m-auto'>GET A QUOTE</h3>
+                        <h3 className='m-auto cursor-pointer'>GET A QUOTE</h3>
                     </div>
                 </div>
 

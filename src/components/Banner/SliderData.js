@@ -1,7 +1,7 @@
 
 
-import SecondImage from '../Assets/Slides/Salvaged.png'
-import ThirdImage from '../Assets/Slides/Vehicle Salvaged.png'
+import SecondImage from '../Assets/Slides/Salvaged-min.jpg'
+import ThirdImage from '../Assets/Slides/Vehicle Salvaged-min.jpg'
 
 const SlideData = [
     {

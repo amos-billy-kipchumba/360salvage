@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './AreDoing.css'
-import AreImg from '../Assets/Slides/Salvaged.png'
+import AreImg from '../Assets/Slides/Salvaged-min.jpg'
 import { Star } from '@mui/icons-material'
 
 // 
