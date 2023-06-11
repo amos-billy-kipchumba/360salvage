@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import './About.css'
 import { CheckOutlined } from '@mui/icons-material'
-import AboutImg2 from '../../Assets/Slides/The art of Salvage.png'
-import AboutImg3 from '../../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car.png'
-import AboutImg4 from '../../Assets/Slides/Vehicle Salvaged.png'
+import AboutImg2 from '../../Assets/about/The art of Salvage-min.jpg'
+import AboutImg3 from '../../Assets/Slides/old-rusted-car-in-junk-yard-hoping-to-salvage-some-Car-min.jpg'
+import AboutImg4 from '../../Assets/Slides/Vehicle Salvaged-min.jpg'
 import { useNavigate } from 'react-router-dom';
 function About() {
     //Start of sliding arrows

@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react'
 import './MainService.css'
 import { useSearchParams, useNavigate } from 'react-router-dom'
 import { ArrowCircleRightOutlined, ArrowRight } from '@mui/icons-material';
-import FirstVid from '../../Assets/banner/Destruction Manenos (online-video-cutter.com).mp4'
-import SecondVid from '../../Assets/banner/garage.mp4'
-import ThirdVid from '../../Assets/banner/wheels.mp4'
-import FourthVid from '../../Assets/banner/parts.mp4'
+import FirstVid from '../../Assets/banner/Destruction Manenos (online-video-cutter.com)_2_2.mp4'
+import SecondVid from '../../Assets/banner/garage_2.mp4'
+import ThirdVid from '../../Assets/banner/wheels_2.mp4'
+import FourthVid from '../../Assets/banner/parts_2.mp4'
 function MainService() {
     const [searchParams] = useSearchParams();
 

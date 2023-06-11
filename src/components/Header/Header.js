@@ -91,11 +91,9 @@ function Header() {
                     <li className='border-b text-white' onClick={()=>{
                         Navigate('/360shop');
                     }}>360 AUTO SHOP*</li>
+                    <li className='border-b text-white'> <a href="tel:+27104300251" className='text-gray-700 hover:text-red-400 transMar'>SPEAK TO AN EXPERT</a></li>
                     <li className='border-b text-white' onClick={()=>{
-                        Navigate('/contacts');
-                    }}>SPEAK TO AN EXPERT</li>
-                    <li className='border-b text-white' onClick={()=>{
-                        Navigate('/shop');
+                        Navigate(`/service?name=JUNK YOUR CAR`);
                     }}>SELL YOUR CAR</li>
 
                     <div className='flex justify-between my-6'>

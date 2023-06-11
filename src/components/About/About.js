@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './About.css'
-import AboutImg from '../Assets/Slides/The art of Salvage.png'
+import AboutImg from '../Assets/about/The art of Salvage-min.jpg'
 
 function About() {
   useEffect(()=>{

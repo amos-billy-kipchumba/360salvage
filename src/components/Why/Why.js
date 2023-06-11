@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './Why.css'
-import WhyImg from '../Assets/Slides/Vehicle Salvaged.png'
+import WhyImg from '../Assets/Slides/Vehicle Salvaged-min.jpg'
 import LeftImg from '../Assets/about/WHY CHOOSE US-17.png'
 import CenterImg from '../Assets/about/WHY CHOOSE US-18.png'
 import RightImg from '../Assets/about/WHY CHOOSE US-19.png'

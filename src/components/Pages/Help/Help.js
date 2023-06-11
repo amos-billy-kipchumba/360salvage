@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Help.css'
-import HelpImg from '../../Assets/Slides/Use This Exact Image for Landing Page-02.png'
+import HelpImg from '../../Assets/Slides/Salvaged-min.jpg'
 import { ArrowCircleRightOutlined } from '@mui/icons-material';
 import {useNavigate} from 'react-router-dom'
 import HelpData from './HelpData';
